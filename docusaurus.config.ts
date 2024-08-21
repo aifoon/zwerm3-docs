@@ -34,53 +34,46 @@ const config: Config = {
       "classic",
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          sidebarPath: require.resolve("./sidebars.js"),
+          // editUrl:
+          //   "https://github.com/aifoon/zwerm3-docs/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: {},
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: require.resolve("./src/css/custom.css"),
         },
-      } satisfies Preset.Options,
+      },
     ],
   ],
-
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    image: "img/aifoon-zwerm-social-card.jpg",
     navbar: {
-      title: "Zwerm3 Docs",
+      title: "Zwerm3",
       logo: {
-        alt: "My Site Logo",
+        alt: "Zwerm3 Logo",
         src: "img/logo.svg",
+        srcDark: "img/logo_dark.svg",
       },
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutoriaffl",
+          sidebarId: "forUsersSidebar",
+          label: "For Users",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "forDevelopersSidebar",
+          label: "For Developers",
+        },
+        {
+          href: "https://github.com/aifoon/zwerm3-docs",
           label: "GitHub",
           position: "right",
         },
@@ -90,46 +83,71 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "For Users",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Architecture",
+              to: "/docs/for-developers/architecture",
             },
           ],
         },
         {
-          title: "Community",
+          title: "For Developers",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Architecture",
+              to: "/docs/for-developers/architecture",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "zwerm3-jack",
+              to: "/docs/category/zwerm3-jack",
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "zwerm3-api",
+              to: "/docs/category/zwerm3-api",
+            },
+            {
+              label: "kweenb",
+              to: "/docs/category/kweenb",
+            },
+            {
+              label: "pd-bee",
+              to: "/docs/category/pd-bee",
             },
           ],
         },
         {
-          title: "More",
+          title: "Repositories",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "zwerm3-jack",
+              to: "https://github.com/aifoon/zwerm3-jack",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "zwerm3-api",
+              to: "https://github.com/aifoon/zwerm3-api",
+            },
+            {
+              label: "kweenb",
+              to: "https://github.com/aifoon/kweenb",
+            },
+            {
+              label: "pd-bee",
+              to: "https://github.com/aifoon/pd-bee",
+            },
+          ],
+        },
+        {
+          title: "About",
+          items: [
+            {
+              label: "Aifoon",
+              to: "https://aifoon.org",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} aifoon VZW`,
     },
     prism: {
       theme: prismThemes.duotoneLight,

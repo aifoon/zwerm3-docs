@@ -1,0 +1,13 @@
+{
+  "position": 4,
+  "label": "kweenb",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "kweenb"
+  },
+  "customProps": {
+    "description": "More information about kweenb"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "position": 2,
+  "label": "zwerm3-jack",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "zwerm3-jack"
+  },
+  "customProps": {
+    "description": "More information about zwerm3-jack library"
+  }
+}

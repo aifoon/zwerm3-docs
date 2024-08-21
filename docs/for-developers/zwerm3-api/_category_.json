@@ -1,0 +1,13 @@
+{
+  "position": 3,
+  "label": "zwerm3-api",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "zwerm3-api"
+  },
+  "customProps": {
+    "description": "More information about zwerm3-api library"
+  }
+}

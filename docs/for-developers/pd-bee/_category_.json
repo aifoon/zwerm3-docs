@@ -1,0 +1,13 @@
+{
+  "position": 5,
+  "label": "pd-bee",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "pd-bee"
+  },
+  "customProps": {
+    "description": "More information about pd-bee"
+  }
+}
