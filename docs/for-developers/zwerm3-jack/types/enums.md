@@ -8,9 +8,9 @@ This document provides an internal overview of the enums used within zwerm3-jack
 
 ## Table of Contents
 
-- [BitRate](#bit-rate)
-- [HubPatchMode](#hub-patch-mode)
-- [StartJacktripType](#start-jacktrip-type)
+- [BitRate](#bitrate)
+- [HubPatchMode](#hubpatchmode)
+- [StartJacktripType](#startjacktriptype)
 
 ### BitRate
 

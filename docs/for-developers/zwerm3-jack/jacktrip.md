@@ -11,7 +11,7 @@
   - [_public_ startJacktripHubServer()](#startjacktriphubserver)
   - [_public_ startJacktripHubServerAsync()](#startjacktriphubserverasync)
   - [_public_ startJacktripP2PClient()](#startjacktripp2pclient)
-  - [_public_ startJacktripP2PClientAsync()](#startjacktripp2pclientAsync)
+  - [_public_ startJacktripP2PClientAsync()](#startjacktripp2pclientasync)
   - [_public_ startJacktriptP2PMultipleClientsAsync()](#startjacktriptp2pmultipleclientsasync)
   - [_public_ startJacktripP2PServer()](#startjacktripp2pserver)
   - [_public_ startJacktripP2PServerAsync()](#startjacktripp2pserverasync)
@@ -30,7 +30,7 @@ export const getJacktripPaths = (): JacktripPaths => { ... }
 
 #### Returns
 
-- An object of type [`JacktripPaths`](/docs/for-developers/zwerm3-jack/types/interfaces#jacktrippaths) based on the operating system where the code is executed.
+- An object of type [`JacktripPaths`](types/interfaces#jacktrippaths) based on the operating system where the code is executed.
 
 #### Behavior
 
@@ -80,13 +80,13 @@ Initializes and starts a Jacktrip Hub Client using the provided parameters. If s
 
 #### Parameters
 
-- `jacktripHubClientParams`: An object from type [JacktripHubClientParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktriphubclientparams) joined with [JacktripParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripparams).
+- `jacktripHubClientParams`: An object from type [JacktripHubClientParams](types/interfaces#jacktriphubclientparams) joined with [JacktripParams](types/interfaces#jacktripparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `RunningCommand`: An object containing from type [RunningCommand](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand).
+- `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
 ### startJacktripHubClientAsync()
 
@@ -101,13 +101,13 @@ Asynchronously starts a Jacktrip Hub Client and returns a Promise that resolves 
 
 #### Parameters
 
-- `jacktripHubClientParams`: An object from type [JacktripHubClientParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktriphubclientparams) joined with [JacktripParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripparams).
+- `jacktripHubClientParams`: An object from type [JacktripHubClientParams](types/interfaces#jacktriphubclientparams) joined with [JacktripParams](types/interfaces#jacktripparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `RunningCommand`: An object containing from type [RunningCommand](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand).
+- `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
 ### startJacktripHubServer()
 
@@ -122,13 +122,13 @@ Starts a Jacktrip Hub Server using provided parameters and configurations. Handl
 
 #### Parameters
 
-- `jacktripHubServerParams`: An object from type [JacktripHubServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktriphubserverparams) joined with [JacktripParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripparams).
+- `jacktripHubServerParams`: An object from type [JacktripHubServerParams](types/interfaces#jacktriphubserverparams) joined with [JacktripParams](types/interfaces#jacktripparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `RunningCommand`: An object containing from type [RunningCommand](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand).
+- `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
 #### Errors
 
@@ -149,13 +149,13 @@ Asynchronously starts a Jacktrip Hub Server and waits for the server to be fully
 
 #### Parameters
 
-- `jacktripHubServerParams`: An object from type [JacktripHubServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktriphubserverparams) joined with [JacktripParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripparams).
+- `jacktripHubServerParams`: An object from type [JacktripHubServerParams](types/interfaces#jacktriphubserverparams) joined with [JacktripParams](types/interfaces#jacktripparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand) object once the server has started.
+- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
 ### startJacktripP2PClient()
 
@@ -170,13 +170,13 @@ Starts a Jacktrip P2P Client with provided parameters.
 
 #### Parameters
 
-- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pserverparams).
+- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](types/interfaces#jacktripp2pserverparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `RunningCommand`: An object containing from type [RunningCommand](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand).
+- `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
 ### startJacktripP2PClientAsync()
 
@@ -191,13 +191,13 @@ Starts a Jacktrip P2P Client asynchronously and waits for the server to fully st
 
 #### Parameters
 
-- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pserverparams).
+- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](types/interfaces#jacktripp2pserverparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand) object once the server has started.
+- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
 ### startJacktriptP2PMultipleClientsAsync()
 
@@ -212,13 +212,13 @@ Starts multiple Jacktrip P2P Clients asynchronously based on an array of clients
 
 #### Parameters
 
-- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pserverparams).
+- `jacktripP2PClientParams`: An object from type [JacktripP2PClientParams](types/interfaces#jacktripp2pclientparams) joined with [JacktripP2PServerParams](types/interfaces#jacktripp2pserverparams).
 
-- `clients`: An array of [`JacktripP2PClient`](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pclient) objects, each defining `localPort`, `clientName`, and `host`.
+- `clients`: An array of [`JacktripP2PClient`](types/interfaces#jacktripp2pclient) objects, each defining `localPort`, `clientName`, and `host`.
 
 #### Returns
 
-- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand) object once the server has started.
+- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
 ### startJacktripP2PServer()
 
@@ -233,13 +233,13 @@ Starts a Jacktrip Peer-to-Peer Server by spawning a process with defined paramet
 
 #### Parameters
 
-- `jacktripP2PServerParams`: An object from type [JacktripP2PServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pserverparams).
+- `jacktripP2PServerParams`: An object from type [JacktripP2PServerParams](types/interfaces#jacktripp2pserverparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `RunningCommand`: An object containing from type [RunningCommand](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand).
+- `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
 #### Throws
 
@@ -259,10 +259,10 @@ Starts a Jacktrip Peer-to-Peer Server asynchronously, allowing the application t
 
 #### Parameters
 
-- `jacktripP2PServerParams`: An object from type [JacktripP2PServerParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripp2pserverparams).
+- `jacktripP2PServerParams`: An object from type [JacktripP2PServerParams](types/interfaces#jacktripp2pserverparams).
 
-- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](/docs/for-developers/zwerm3-jack/types/interfaces#optionalparams)
+- `optionalParams`: Additional parameters, including logging functionality from type [OptionalParams](types/interfaces#optionalparams)
 
 #### Returns
 
-- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](/docs/for-developers/zwerm3-jack/types/interfaces#runningcommand) object once the server has started.
+- `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.

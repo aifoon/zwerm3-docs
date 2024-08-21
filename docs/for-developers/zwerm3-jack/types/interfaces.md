@@ -112,9 +112,9 @@ const jacktripParams: JacktripParams = {
 
 This interface extends the `JacktripParams` interface and defines the parameters for the Jacktrip hub server.
 
-| Property       | Type                                                                      | Description                    |
-| -------------- | ------------------------------------------------------------------------- | ------------------------------ |
-| `hubPatchMode` | [HubPatchMode](/docs/for-developers/zwerm3-jack/types/enums#hubpatchmode) | Patch mode for the hub server. |
+| Property       | Type                               | Description                    |
+| -------------- | ---------------------------------- | ------------------------------ |
+| `hubPatchMode` | [HubPatchMode](enums#hubpatchmode) | Patch mode for the hub server. |
 
 **Example Usage:**
 
@@ -158,13 +158,13 @@ const jacktripHubClientParams: JacktripHubClientParams = {
 
 This interface extends the `JacktripParams` interface and defines the parameters for the Jacktrip P2P server.
 
-| Property          | Type                                                            | Description                                    |
-| ----------------- | --------------------------------------------------------------- | ---------------------------------------------- |
-| `bitRate`         | [BitRate](/docs/for-developers/zwerm3-jack/types/enums#bitrate) | Bit rate for the P2P server.                   |
-| `clientName`      | string                                                          | Name of the P2P server.                        |
-| `receiveChannels` | number                                                          | Number of receive channels for the P2P server. |
-| `redundancy`      | number                                                          | Redundancy level for the P2P server.           |
-| `sendChannels`    | number                                                          | Number of send channels for the P2P server.    |
+| Property          | Type                     | Description                                    |
+| ----------------- | ------------------------ | ---------------------------------------------- |
+| `bitRate`         | [BitRate](enums#bitrate) | Bit rate for the P2P server.                   |
+| `clientName`      | string                   | Name of the P2P server.                        |
+| `receiveChannels` | number                   | Number of receive channels for the P2P server. |
+| `redundancy`      | number                   | Redundancy level for the P2P server.           |
+| `sendChannels`    | number                   | Number of send channels for the P2P server.    |
 
 **Example Usage:**
 
@@ -248,11 +248,11 @@ const jacktripP2PClient: JacktripP2PClient = {
 
 This interface defines the properties of a running command.
 
-| Property  | Type                                                                               | Description                                  |
-| --------- | ---------------------------------------------------------------------------------- | -------------------------------------------- |
-| `command` | string                                                                             | The command that is running.                 |
-| `pid`     | number                                                                             | The process ID of the running command.       |
-| `params`  | [JacktripParams](/docs/for-developers/zwerm3-jack/types/interfaces#jacktripparams) | The parameters used for the running command. |
+| Property  | Type                                        | Description                                  |
+| --------- | ------------------------------------------- | -------------------------------------------- |
+| `command` | string                                      | The command that is running.                 |
+| `pid`     | number                                      | The process ID of the running command.       |
+| `params`  | [JacktripParams](interfaces#jacktripparams) | The parameters used for the running command. |
 
 **Example Usage:**
 

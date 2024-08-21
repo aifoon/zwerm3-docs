@@ -173,7 +173,7 @@ const getDeviceParams = (): CLIParams => {
 const getJackFolderPath = (): JackPaths => { ... };
 ```
 
-An object of type [`JackPaths`](/docs/for-developers/zwerm3-jack/types/interfaces#jackpaths) representing the correct paths for the JACK commands based on the operating system. This function acts as the primary interface for retrieving the correct JACK paths. It checks the platform and calls the corresponding path function (Windows, Darwin, or Linux).
+An object of type [`JackPaths`](types/interfaces#jackpaths) representing the correct paths for the JACK commands based on the operating system. This function acts as the primary interface for retrieving the correct JACK paths. It checks the platform and calls the corresponding path function (Windows, Darwin, or Linux).
 
 ### getJackHubClients()
 
@@ -221,7 +221,7 @@ export const getJackHubClients = (): Promise<HubClients> => {
 };
 ```
 
-This function retrieves the current JackTrip Hub Clients by executing the `jack_lsp` command to list the available channels. It returns a promise that resolves with an object of type [`HubClients`](/docs/for-developers/zwerm3-jack/types/interfaces#hubclients), which includes the following properties:
+This function retrieves the current JackTrip Hub Clients by executing the `jack_lsp` command to list the available channels. It returns a promise that resolves with an object of type [`HubClients`](types/interfaces#hubclients), which includes the following properties:
 
 - **sendChannels**: An array of strings representing channels that can send audio data.
 - **receiveChannels**: An array of strings representing channels that can receive audio data.

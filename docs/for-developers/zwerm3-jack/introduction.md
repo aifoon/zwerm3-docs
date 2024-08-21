@@ -66,28 +66,28 @@ This node module exports a comprehensive set of functions and modules for managi
 
 ### Jack
 
-- **[`connectChannel`](/docs/for-developers/zwerm3-jack/jackd#connectchannel):** Connects a channel within the Jack system.
-- **[`disconnectChannel`](/docs/for-developers/zwerm3-jack/jackd#disconnectchannel):** Disconnects a channel within the Jack system.
-- **[`getJackPaths`](/docs/for-developers/zwerm3-jack/jackd#getjackpaths):** Retrieves paths related to the local Jack binaries.
-- **[`isJackDmpRunning`](/docs/for-developers/zwerm3-jack/jackd#isjackdmprunning):** Checks if the Jack daemon (`jackdmp`) is running.
-- **[`startJackDmp`](/docs/for-developers/zwerm3-jack/jackd#startjackdmp):** Starts the Jack daemon (`jackdmp`).
-- **[`startJackDmpAsync`](/docs/for-developers/zwerm3-jack/jackd#startjackdmpasync):** Asynchronously starts the Jack daemon (`jackdmp`).
+- **[`connectChannel`](jack#connectchannel):** Connects a channel within the Jack system.
+- **[`disconnectChannel`](jack#disconnectchannel):** Disconnects a channel within the Jack system.
+- **[`getJackHubClients`](jack#getjackhubclients):** Gets a list of Jack Hub clients.
+- **[`getJackPaths`](jack#getjackpaths):** Retrieves paths related to the local Jack binaries.
+- **[`getJackSystemClients`](jack#getjacksystemclients):** Gets a list of Jack system clients.
+- **[`isJackDmpRunning`](jack#isjackdmprunning):** Checks if the Jack daemon (`jackdmp`) is running.
+- **[`startJackDmp`](jack#startjackdmp):** Starts the Jack daemon (`jackdmp`).
+- **[`startJackDmpAsync`](jack#startjackdmpasync):** Asynchronously starts the Jack daemon (`jackdmp`).
 
 ### Jacktrip
 
-- **[`getJacktripPaths`](/docs/for-developers/zwerm3-jack/jacktrip#getjacktrippaths):** Retrieves paths related to the local Jacktrip binaries.
-- **[`isJacktripRunning`](/docs/for-developers/zwerm3-jack/jacktrip#isjacktriprunning):** Checks if Jacktrip is running.
-- **[`getJackHubClients`](/docs/for-developers/zwerm3-jack/jackd#getjackhubclients):** Gets a list of Jack Hub clients.
-- **[`getJackSystemClients`](/docs/for-developers/zwerm3-jack/jackd#getjacksystemclients):** Gets a list of Jack system clients.
-- **[`startJacktripHubServer`](docs/for-developers/zwerm3-jack/jacktrip#startjacktriphubserver):** Starts a Jacktrip Hub server.
-- **[`startJacktripHubServerAsync`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktriphubserverasync):** Asynchronously starts a Jacktrip Hub server.
-- **[`startJacktripHubClient`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktriphubclient):** Starts a Jacktrip Hub client.
-- **[`startJacktripHubClientAsync`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktriphubclientasync):** Asynchronously starts a Jacktrip Hub client.
-- **[`startJacktripP2PServer`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktripp2pserver):** Starts a Jacktrip peer-to-peer (P2P) server.
-- **[`startJacktripP2PServerAsync`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktripp2pserverasync):** Asynchronously starts a Jacktrip peer-to-peer (P2P) server.
-- **[`startJacktripP2PClient`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktripp2pclient):** Starts a Jacktrip peer-to-peer (P2P) client.
-- **[`startJacktripP2PClientAsync`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktripp2pclientasync):** Asynchronously starts a Jacktrip peer-to-peer (P2P) client.
-- **[`startJacktriptP2PMultipleClientsAsync`](/docs/for-developers/zwerm3-jack/jacktrip#startjacktriptp2pmultipleclientsasync):** Asynchronously starts multiple Jacktrip peer-to-peer (P2P) clients.
+- **[`getJacktripPaths`](jacktrip#getjacktrippaths):** Retrieves paths related to the local Jacktrip binaries.
+- **[`isJacktripRunning`](jacktrip#isjacktriprunning):** Checks if Jacktrip is running.
+- **[`startJacktripHubServer`](jacktrip#startjacktriphubserver):** Starts a Jacktrip Hub server.
+- **[`startJacktripHubServerAsync`](jacktrip#startjacktriphubserverasync):** Asynchronously starts a Jacktrip Hub server.
+- **[`startJacktripHubClient`](jacktrip#startjacktriphubclient):** Starts a Jacktrip Hub client.
+- **[`startJacktripHubClientAsync`](jacktrip#startjacktriphubclientasync):** Asynchronously starts a Jacktrip Hub client.
+- **[`startJacktripP2PServer`](jacktrip#startjacktripp2pserver):** Starts a Jacktrip peer-to-peer (P2P) server.
+- **[`startJacktripP2PServerAsync`](jacktrip#startjacktripp2pserverasync):** Asynchronously starts a Jacktrip peer-to-peer (P2P) server.
+- **[`startJacktripP2PClient`](jacktrip#startjacktripp2pclient):** Starts a Jacktrip peer-to-peer (P2P) client.
+- **[`startJacktripP2PClientAsync`](jacktrip#startjacktripp2pclientasync):** Asynchronously starts a Jacktrip peer-to-peer (P2P) client.
+- **[`startJacktriptP2PMultipleClientsAsync`](jacktrip#startjacktriptp2pmultipleclientsasync):** Asynchronously starts multiple Jacktrip peer-to-peer (P2P) clients.
 
 ### Process Management
 
