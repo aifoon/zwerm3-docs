@@ -1,7 +1,5 @@
 # Jacktrip
 
-**Table of Contents**
-
 - [Introduction](#introduction)
 - [Functions](#functions)
   - [_public_ getJacktripPaths()](#getjacktrippaths)
@@ -22,7 +20,7 @@ This module provides logic for managing the Jacktrip process on a host system. I
 
 ## Functions
 
-### getJacktripPaths()
+### `getJacktripPaths()`
 
 ```typescript
 export const getJacktripPaths = (): JacktripPaths => { ... }
@@ -39,7 +37,7 @@ export const getJacktripPaths = (): JacktripPaths => { ... }
   - `darwin`: Calls `jacktripDarwinPaths()`
   - Any other platform will default to Linux and call `jacktripLinuxPaths()`.
 
-### isJacktripRunning()
+### `isJacktripRunning()`
 
 ```typescript
 export const isJacktripRunning = (): Promise<boolean>
@@ -67,7 +65,7 @@ isJacktripRunning()
   });
 ```
 
-### startJacktripHubClient()
+### `startJacktripHubClient()`
 
 ```typescript
 export const startJacktripHubClient = (
@@ -88,7 +86,7 @@ Initializes and starts a Jacktrip Hub Client using the provided parameters. If s
 
 - `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
-### startJacktripHubClientAsync()
+### `startJacktripHubClientAsync()`
 
 ```typescript
 export const startJacktripHubClientAsync = (
@@ -109,7 +107,7 @@ Asynchronously starts a Jacktrip Hub Client and returns a Promise that resolves 
 
 - `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
-### startJacktripHubServer()
+### `startJacktripHubServer()`
 
 ```typescript
 export const startJacktripHubServer = (
@@ -136,7 +134,7 @@ Starts a Jacktrip Hub Server using provided parameters and configurations. Handl
 
 - Throws `StartJacktripFailedException` if the Jacktrip server fails to start.
 
-### startJacktripHubServerAsync()
+### `startJacktripHubServerAsync()`
 
 ```typescript
 export const startJacktripHubServerAsync = (
@@ -157,7 +155,7 @@ Asynchronously starts a Jacktrip Hub Server and waits for the server to be fully
 
 - `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
-### startJacktripP2PClient()
+### `startJacktripP2PClient()`
 
 ```typescript
 export const startJacktripP2PClient = (
@@ -178,7 +176,7 @@ Starts a Jacktrip P2P Client with provided parameters.
 
 - `RunningCommand`: An object containing from type [RunningCommand](types/interfaces#runningcommand).
 
-### startJacktripP2PClientAsync()
+### `startJacktripP2PClientAsync()`
 
 ```typescript
 export const startJacktripP2PClientAsync = (
@@ -199,7 +197,7 @@ Starts a Jacktrip P2P Client asynchronously and waits for the server to fully st
 
 - `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
-### startJacktriptP2PMultipleClientsAsync()
+### `startJacktriptP2PMultipleClientsAsync()`
 
 ```typescript
 export const startJacktriptP2PMultipleClientsAsync = (
@@ -220,7 +218,7 @@ Starts multiple Jacktrip P2P Clients asynchronously based on an array of clients
 
 - `Promise<RunningCommand>`: Resolves to a [`RunningCommand`](types/interfaces#runningcommand) object once the server has started.
 
-### startJacktripP2PServer()
+### `startJacktripP2PServer()`
 
 ```typescript
 export const startJacktripP2PServer = (
@@ -246,7 +244,7 @@ Starts a Jacktrip Peer-to-Peer Server by spawning a process with defined paramet
 - **BitRateNotValidException**: If the provided bit rate is invalid.
 - **StartJacktripFailedException**: If the server fails to start, an exception containing the error message is thrown.
 
-### startJacktripP2PServerAsync()
+### `startJacktripP2PServerAsync()`
 
 ```typescript
 export const startJacktripP2PServerAsync = (

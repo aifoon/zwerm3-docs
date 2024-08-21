@@ -1,7 +1,5 @@
 # Jack
 
-**Table of Contents**
-
 - [Introduction](#introduction)
 - [Functions](#functions)
   - [_public_ connectChannel()](#connectchannel)
@@ -22,7 +20,7 @@ This module provides logic for managing the Jack Daemon on a host system. It off
 
 ## Functions
 
-### connectChannel()
+### `connectChannel()`
 
 ```typescript
 /**
@@ -53,7 +51,7 @@ export const connectChannel = async (
 
 This function connects a source and destination channel in Jack using the `jack_connect` command-line utility. It repeatedly checks if the connection has been established after each attempt. If the connection is not successful after five attempts, it returns `false`.
 
-### disconnectChannel()
+### `disconnectChannel()`
 
 ```typescript
 /**
@@ -83,7 +81,7 @@ export const disconnectChannel = (
 
 This function disconnects a source and destination channel in Jack using the `jack_disconnect` command-line utility. Similar to `connectChannel()`, it repeatedly checks if the disconnection has been successful after each attempt. If the disconnection is not successful after five attempts, it returns `false`.
 
-### getConnections()
+### `getConnections()`
 
 ```typescript
 /**
@@ -121,7 +119,7 @@ const getConnections = (): {
 
 This function retrieves all current connections in Jack by using the `jack_lsp` command-line utility. It parses the output and returns an array of objects, each representing a connection with its source and destination channels.
 
-### getDeviceParams()
+### `getDeviceParams()`
 
 ```typescript
 /**
@@ -167,7 +165,7 @@ const getDeviceParams = (): CLIParams => {
   - **Other (Linux, etc.):** `-d alsa`
 - Returns the populated `CLIParams` object.
 
-### getJackPaths()
+### `getJackPaths()`
 
 ```typescript
 const getJackFolderPath = (): JackPaths => { ... };
@@ -175,7 +173,7 @@ const getJackFolderPath = (): JackPaths => { ... };
 
 An object of type [`JackPaths`](types/interfaces#jackpaths) representing the correct paths for the JACK commands based on the operating system. This function acts as the primary interface for retrieving the correct JACK paths. It checks the platform and calls the corresponding path function (Windows, Darwin, or Linux).
 
-### getJackHubClients()
+### `getJackHubClients()`
 
 ```typescript
 /**
@@ -244,7 +242,7 @@ This function retrieves the current JackTrip Hub Clients by executing the `jack_
 
 5.  **Return Promise**: The `hubClients` object is resolved as the final output of the promise.
 
-### getJackSystemClients()
+### `getJackSystemClients()`
 
 ```typescript
 /**
@@ -317,7 +315,7 @@ This function retrieves the current JACK system clients by executing the `jack_l
 
     - Any errors encountered during execution will throw an instance of the `Exception` class, encapsulating the error message.
 
-### hasConnection()
+### `hasConnection()`
 
 ```typescript
 /**
@@ -342,7 +340,7 @@ export const hasConnection = ({ source, destination }: ChannelConnection) => {
 
 This function checks if a specific connection exists between a source and destination channel. It retrieves all current connections using `getConnections()`, finds the source channel, and then verifies if the destination channel is included in the source's destinations.
 
-### isJackDmpRunning()
+### `isJackDmpRunning()`
 
 ```typescript
 /**
@@ -374,7 +372,7 @@ export const isJackDmpRunning = async (): Promise<boolean> =>
 - If no processes are found, resolves the promise with `false`.
 - Catches any errors during the process search and rejects the promise with the error message.
 
-### startJackDmp()
+### `startJackDmp()`
 
 ```typescript
 /**
@@ -497,7 +495,7 @@ An object containing:
    - Returns an object containing the command string, process ID, and the original `jackParams` object.
    - Catches any errors during the process spawning and throws a `StartJackDmpFailedException`.
 
-### startJackDmpAsync()
+### `startJackDmpAsync()`
 
 ```typescript
 /**

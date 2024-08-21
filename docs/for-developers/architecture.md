@@ -31,7 +31,7 @@ To start streaming, you need a sound interface—this can be either a virtual or
 
 Once you have the desired number of audio channels available, the bee with ID 1 will be sent to channel 1, the bee with ID 2 to channel 2, and so on. You can configure the number of speakers in `kweenb` and send out an audio stream in peer-to-peer mode or hub mode (more details in the kweenb section).
 
-In the background, `kweenb` initializes Jack and Jacktrip with your specified settings. Jack handles the connections from your audio device to Jacktrip. Jacktrip is responsible for transmitting the audio over the network using UDP. When a bee receives an audio signal, it is captured via Jacktrip, routed to Jack, then passed to Pure Data before being sent to the bee's DAC for audio signal conversion.
+In the background, `kweenb` initializes Jack and Jacktrip with your specified settings (through `zwerm3-jack`). Jack handles the connections from your audio device to Jacktrip. Jacktrip is responsible for transmitting the audio over the network using UDP. When a bee receives an audio signal, it is captured via Jacktrip, routed to Jack, then passed to Pure Data before being sent to the bee's DAC for audio signal conversion.
 
 ## Triggering Audio
 
