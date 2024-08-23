@@ -55,7 +55,7 @@
    * Container
    */
 
-  --ifm-global-spacing: 2rem;
+  --ifm-global-spacing: 1rem;
   --ifm-container-width: 1140px;
   --ifm-container-width-xl: 100%;
 
@@ -194,6 +194,12 @@ a.primary-button {
   transition: background-color 0.2s;
 }
 
+a.primary-button.sm,
+a.secondary-button.sm {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
 a.primary-button:hover {
   background-color: var(--primary-200);
 }
@@ -245,5 +251,11 @@ form textarea {
   img {
     width: auto;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  :root {
+    --ifm-global-spacing: 2rem;
   }
 }

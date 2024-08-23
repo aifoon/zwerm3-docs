@@ -1,0 +1,10 @@
+{
+  "position": 1,
+  "label": "Main Process",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "for-developers/kweenb/main/introduction"
+  }
+}

@@ -46,11 +46,9 @@ export const HomepageArchitecture = () => {
           <div className={styles.homePageArchitectureCard}>
             <Heading as="h3">kweenb</Heading>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi exercitationem reprehenderit corporis! Sint quae
-              similique voluptates? Facere perspiciatis placeat officia, facilis
-              adipisci quasi aspernatur temporibus recusandae neque dolores nisi
-              assumenda.
+              kweenb is the audio management software where you can manage the
+              swarm, upload files to the swarm, manage the audio and control
+              positioning
             </p>
           </div>
         </a>

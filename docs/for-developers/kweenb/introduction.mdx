@@ -1,0 +1,104 @@
+import { LinkButton } from "@site/src/components/LinkButton";
+import { LinkButtonGroup } from "@site/src/components/LinkButtonGroup";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaGlasses } from "@react-icons/all-files/fa/FaGlasses";
+
+# Introduction
+
+![A screenshot of the kweenb application](/img/hero-image.png)
+
+**kweenb** is the audio management software where you can:
+
+- Manage the swarm by adding new bees, activating or deactivating them.
+- Connect the active swarm to start streaming audio with Jacktrip, supporting both peer-to-peer and hub mode.
+- Connect the active swarm to start triggering actions via OSC.
+- Disconnect the swarm and cleanup all the open connections
+- Adjust the Jack and Jacktrip settings used during connection.
+- Upload and manage audio files on each bee
+- Use positioning that interacts with the MQTT server of Pozyx and translates that data into audio parameters (e.g. volume)
+- Configure the bee by calling endpoints from zwerm3-api
+- Use various tools to validate each step in the connection process.
+
+## Architecture
+
+![A screenshot of the kweenb architecture](/img/for-developers/kweenb/kweenb-architecture.png)
+
+### Desktop Application
+
+**kweenb** is built with Electron, which enables the creation of cross-platform desktop applications using TypeScript, HTML, and CSS. Node.js is used on the backend to interact with the native desktop operating system. The project follows a typical Electron application structure, which consists of three main parts: `main`, `preload`, and `renderer`.
+
+#### Main Process
+
+The [**main process**](main/introduction) functions as a Node.js backend server. It handles communication between the backend and the frontend, allowing data to be exchanged between the main process and the renderer.
+
+<LinkButtonGroup>
+  <LinkButton
+    label="Open in docs"
+    link="main/introduction"
+    size="small"
+    variant="primary"
+    icon={<FaGlasses />}
+  />
+  <LinkButton
+    label="Open in GitHub"
+    link="https://github.com/aifoon/kweenb/tree/main/src/main"
+    size="small"
+    variant="secondary"
+    icon={<FaGithub />}
+  />
+</LinkButtonGroup>
+
+#### Preload Process
+
+The **preload process** acts as a security layer between the Electron main process and the renderer. Direct access to the main process is restricted, and only a carefully chosen set of methods, actions, and events can be exposed to the renderer.
+
+<LinkButton
+  label="Open in GitHub"
+  link="https://github.com/aifoon/kweenb/tree/main/src/preload"
+  size="small"
+  icon={<FaGithub />}
+/>
+
+#### Renderer Process
+
+The **renderer** is the frontend of the application. We use React as the frontend framework, building the UI with reusable components. These components are shared with the web interface used for triggering actions.
+
+<LinkButton
+  label="Open in GitHub"
+  link="https://github.com/aifoon/kweenb/tree/main/src/renderer"
+  size="small"
+  icon={<FaGithub />}
+/>
+
+### Triggering Interface
+
+The triggering interface is a web application that is served once **kweenb** is fully started. When accessed, it connects to a Socket.io server hosted by **kweenb**, enabling real-time communication with the swarm. This allows the interface to fetch the current swarm, send OSC messages, retrieve audio scenes, and more.
+
+<LinkButton
+  label="Open in GitHub"
+  link="https://github.com/aifoon/kweenb/tree/main/src/interface"
+  size="small"
+  icon={<FaGithub />}
+/>
+
+### React Components
+
+We reuse React components between the kweenb `renderer` and the web `interface` (for triggering). This shared component architecture allows for faster development and easier updates across both the desktop and web interfaces.
+
+<LinkButton
+  label="Open in GitHub"
+  link="https://github.com/aifoon/kweenb/tree/main/src/components"
+  size="small"
+  icon={<FaGithub />}
+/>
+
+### Types
+
+Everything is typed via Typescript and shared with `main`, `preload`, `renderer` and `interface`. The shared Types can be found in the shared folder.
+
+<LinkButton
+  label="Open in GitHub"
+  link="https://github.com/aifoon/kweenb/tree/main/src/shared"
+  size="small"
+  icon={<FaGithub />}
+/>
