@@ -1,0 +1,452 @@
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+
+const sidebar: SidebarsConfig = {
+  apisidebar: [
+    {
+      type: "doc",
+      id: "for-developers/zwerm3-api/zwerm-3-0-api",
+    },
+    {
+      type: "category",
+      label: "zwerm3",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/zwerm-3",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-jack-paths",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-jacktrip-paths",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-kill-all-jack",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-start-jack-with-jacktrip-hub-client",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-start-jack-with-jacktrip-hub-server",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-start-jack-with-jacktrip-p-2-p-client",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-start-jack-with-jacktrip-p-2-p-multiple-clients",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-start-jack-with-jacktrip-p-2-p-server",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/app-controller-version",
+          label: "",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "jacktrip",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/jacktrip",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-isrunning",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-kill",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-start-hub-server",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-start-hub-client",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-start-p-2-p-client",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-start-p-2-p-multiple-clients",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jacktrip-controller-start-p-2-p-server",
+          label: "",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "jack",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/jack",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-connect-channel",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-disconnect-channel",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-hubclients",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-systemclients",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-isrunning",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-kill",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/jack-controller-start",
+          label: "",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "config",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/config",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-get",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-get-all",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-save",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-set-jack-folder-path",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-set-jacktrip-bin-path",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/config-controller-remove",
+          label: "",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "mqtt",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/mqtt",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/mqtt-controller-broker",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/mqtt-controller-publish",
+          label: "",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "git",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/git",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/git-controller-connect-channel",
+          label: "",
+          className: "api-method patch",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "scripts",
+      link: {
+        type: "doc",
+        id: "for-developers/zwerm3-api/scripts",
+      },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/scripts-controller-exec",
+          label: "",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/scripts-controller-list",
+          label: "",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/scripts-controller-upload-file",
+          label: "",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Schemas",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apimessageresponse",
+          label: "ApiMessageResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackdto",
+          label: "StartJackDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjacktriphubclientdto",
+          label: "StartJacktripHubClientDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackwithjacktriphubclientdto",
+          label: "StartJackWithJacktripHubClientDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apirunningcommandresponse",
+          label: "ApiRunningCommandResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjacktriphubserverdto",
+          label: "StartJacktripHubServerDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackwithjacktriphubserverdto",
+          label: "StartJackWithJacktripHubServerDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjacktripp-2-pclientdto",
+          label: "StartJacktripP2PClientDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackwithjacktripp-2-pclientdto",
+          label: "StartJackWithJacktripP2PClientDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjacktripp-2-pmultipleclientsdto",
+          label: "StartJacktripP2PMultipleClientsDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackwithjacktripp-2-pmultipleclientsdto",
+          label: "StartJackWithJacktripP2PMultipleClientsDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjacktripp-2-pserverdto",
+          label: "StartJacktripP2PServerDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/startjackwithjacktripp-2-pserverdto",
+          label: "StartJackWithJacktripP2PServerDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apibooleanresponse",
+          label: "ApiBooleanResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/configdto",
+          label: "ConfigDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/configpathdto",
+          label: "ConfigPathDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/publishmessagedto",
+          label: "PublishMessageDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/connectchannelsdto",
+          label: "ConnectChannelsDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apihubclientsresponse",
+          label: "ApiHubClientsResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apisystemclientsresponse",
+          label: "ApiSystemClientsResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/runscriptdto",
+          label: "RunScriptDto",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apiscriptsoutputresponse",
+          label: "ApiScriptsOutputResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "for-developers/zwerm3-api/schemas/apiscriptslistresponse",
+          label: "ApiScriptsListResponse",
+          className: "schema",
+        },
+      ],
+    },
+  ],
+};
+
+export default sidebar.apisidebar;

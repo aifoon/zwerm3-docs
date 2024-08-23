@@ -1,0 +1,103 @@
+---
+id: startjacktriphubserverdto
+title: "StartJacktripHubServerDto"
+description: ""
+sidebar_label: "StartJacktripHubServerDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJacktripHubServerDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"channels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"debug"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"killAllJacktripBeforeStart"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"localPort"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":4464,"description":"The local port on which the Jacktrip instance is running"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"connectDefaultAudioPorts"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"queueBuffer"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"realtimePriority"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"hubPatchMode"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Hub auto audio patch, only has effect if running HUB SERVER mode, 0=server-to-clients, 1=client loopback, 2=client fan out/in but not loopback, 3=reserved for TUB, 4=full mix, 5=no auto patching. Read the Jacktrip docs: https://ccrma.stanford.edu/docs/common/IETF.html#hub-patching","default":5}}
+  >
+    
+  </SchemaItem>
+</ul>
+            

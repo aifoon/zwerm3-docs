@@ -4,8 +4,8 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "title": "zwerm3-jack"
+    "type": "doc",
+    "id": "for-developers/zwerm3-jack/introduction"
   },
   "customProps": {
     "description": "More information about zwerm3-jack library"

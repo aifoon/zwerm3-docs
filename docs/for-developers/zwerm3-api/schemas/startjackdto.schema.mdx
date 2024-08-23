@@ -1,0 +1,85 @@
+---
+id: startjackdto
+title: "StartJackDto"
+description: ""
+sidebar_label: "StartJackDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJackDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"device"}
+    required={false}
+    schemaName={"string"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"This is the device name, if empty this defaults the default soundcard","default":""}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"inputChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"These are the numbers of input channels","default":2}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"outputChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"These are the numbers of output channels","default":2}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"sampleRate"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"The samplerate 22050 | 32000 | 44100 | 48000 | 88200 | 96000 | 192000","default":48000}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"bufferSize"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"The buffersize (frames/period) 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096","default":256}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"periods"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"The periods/buffer","default":2}}
+  >
+    
+  </SchemaItem>
+</ul>
+            

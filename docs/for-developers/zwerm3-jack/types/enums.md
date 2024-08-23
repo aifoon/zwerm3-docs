@@ -6,13 +6,7 @@ sidebar_position: 2
 
 This document provides an internal overview of the enums used within zwerm3-jack.
 
-## Table of Contents
-
-- [BitRate](#bitrate)
-- [HubPatchMode](#hubpatchmode)
-- [StartJacktripType](#startjacktriptype)
-
-### BitRate
+## BitRate
 
 This enum defines various bitrates used within Jacktrip.
 
@@ -23,7 +17,7 @@ This enum defines various bitrates used within Jacktrip.
 | TwentyFour | 24 bits per sample |
 | ThirtyTwo  | 32 bits per sample |
 
-### HubPatchMode
+## HubPatchMode
 
 This enum describes different modes of patching within a Jacktrip hub. More information on these modes can be found at: [https://ccrma.stanford.edu/docs/common/IETF.html#hub-patching](https://ccrma.stanford.edu/docs/common/IETF.html#hub-patching)
 
@@ -36,7 +30,7 @@ This enum describes different modes of patching within a Jacktrip hub. More info
 | FullMix                      | All clients can send and receive audio from all other clients, including the server.                                             |
 | NoConnections                | No audio connections are established. This mode is primarily used for configuring the hub before establishing audio connections. |
 
-### StartJacktripType
+## StartJacktripType
 
 This enum defines the different Jacktrip types.
 

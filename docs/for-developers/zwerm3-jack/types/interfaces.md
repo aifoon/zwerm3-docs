@@ -7,28 +7,7 @@ sidebar_label: Interfaces
 
 # Interfaces and Types
 
-## Table of Contents
-
-- [JackPaths](#jackpaths)
-- [JacktripPaths](#jacktrippaths)
-- [JackPathsOptions](#jackpathsoptions)
-- [JacktripParams](#jacktripparams)
-- [JacktripHubServerParams](#jacktriphubserverparams)
-- [JacktripHubClientParams](#jacktriphubclientparams)
-- [JacktripP2PServerParams](#jacktripp2pserverparams)
-- [JacktripP2PClientParams](#jacktripp2pclientparams)
-- [JackParams](#jackparams)
-- [JacktripP2PClient](#jacktripp2pclient)
-- [RunningCommand](#runningcommand)
-- [HubClients](#hubclients)
-- [SystemClients](#systemclients)
-- [ChannelConnection](#channelconnection)
-- [Config](#config)
-- [OptionalParams](#optionalparams)
-
----
-
-### JackPaths
+## JackPaths
 
 This interface defines the paths for the Jack audio server binaries.
 
@@ -50,7 +29,7 @@ const jackPaths: JackPaths = {
 };
 ```
 
-### JacktripPaths
+## JacktripPaths
 
 This interface defines the paths for the Jacktrip audio server binaries.
 
@@ -66,7 +45,7 @@ const jacktripPaths: JacktripPaths = {
 };
 ```
 
-### JackPathsOptions
+## JackPathsOptions
 
 This interface defines the options for the Jack audio server.
 
@@ -82,7 +61,7 @@ const jackPathsOptions: JackPathsOptions = {
 };
 ```
 
-### JacktripParams
+## JacktripParams
 
 This interface defines the parameters for Jacktrip.
 
@@ -108,7 +87,7 @@ const jacktripParams: JacktripParams = {
 };
 ```
 
-### JacktripHubServerParams
+## JacktripHubServerParams
 
 This interface extends the `JacktripParams` interface and defines the parameters for the Jacktrip hub server.
 
@@ -125,7 +104,7 @@ const jacktripHubServerParams: JacktripHubServerParams = {
 };
 ```
 
-### JacktripHubClientParams
+## JacktripHubClientParams
 
 This interface extends the `JacktripParams` interface and defines the parameters for the Jacktrip hub client.
 
@@ -154,7 +133,7 @@ const jacktripHubClientParams: JacktripHubClientParams = {
 };
 ```
 
-### JacktripP2PServerParams
+## JacktripP2PServerParams
 
 This interface extends the `JacktripParams` interface and defines the parameters for the Jacktrip P2P server.
 
@@ -179,7 +158,7 @@ const jacktripP2PServerParams: JacktripP2PServerParams = {
 };
 ```
 
-### JacktripP2PClientParams
+## JacktripP2PClientParams
 
 This interface extends the `JacktripP2PServerParams` interface and defines the parameters for the Jacktrip P2P client.
 
@@ -198,7 +177,7 @@ const jacktripP2PClientParams: JacktripP2PClientParams = {
 };
 ```
 
-### JackParams
+## JackParams
 
 This interface defines the parameters for the Jack audio server.
 
@@ -224,7 +203,7 @@ const jackParams: JackParams = {
 };
 ```
 
-### JacktripP2PClient
+## JacktripP2PClient
 
 This interface defines the properties of a Jacktrip P2P client.
 
@@ -244,7 +223,7 @@ const jacktripP2PClient: JacktripP2PClient = {
 };
 ```
 
-### RunningCommand
+## RunningCommand
 
 This interface defines the properties of a running command.
 
@@ -264,7 +243,7 @@ const runningCommand: RunningCommand = {
 };
 ```
 
-### HubClients
+## HubClients
 
 This interface defines the properties of hub clients.
 
@@ -282,7 +261,7 @@ const hubClients: HubClients = {
 };
 ```
 
-### SystemClients
+## SystemClients
 
 This interface defines the properties of system clients.
 
@@ -300,7 +279,7 @@ const systemClients: SystemClients = {
 };
 ```
 
-### ChannelConnection
+## ChannelConnection
 
 This interface defines the properties of a channel connection.
 
@@ -318,7 +297,7 @@ const channelConnection: ChannelConnection = {
 };
 ```
 
-### Config
+## Config
 
 This interface defines the properties of a configuration.
 
@@ -334,7 +313,7 @@ const config: Config = {
 };
 ```
 
-### OptionalParams
+## OptionalParams
 
 This interface defines optional parameters for functions.
 

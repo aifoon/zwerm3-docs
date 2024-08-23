@@ -92,7 +92,7 @@ This node module exports a comprehensive set of functions and modules for managi
 ### Process Management
 
 - **[`getRunningProcesses`](process-management#getrunningprocesses):** Retrieves information about running processes.
-- **[`killAllProcesses`](process-management#killprocessbypid):** Kills all running processes (Jack and Jacktrip).
+- **[`killAllProcesses`](process-management#killallprocesses):** Kills all running processes (Jack and Jacktrip).
 - **[`killJack`](process-management#killjack):** Kills the Jack process.
 - **[`killJacktrip`](process-management#killjacktrip):** Kills the Jacktrip process.
 - **[`killProcessByPid`](process-management#killprocessbypid):** Kills a process based on its process ID (PID).

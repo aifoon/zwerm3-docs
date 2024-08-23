@@ -1,0 +1,133 @@
+---
+id: jack-controller-hubclients
+title: "hubclients"
+description: "Gets the hub send and receive channels."
+sidebar_label: "hubclients"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVU8GOm0AM/RXLl14QSbc3btGq2m5PVbW9NIoqM3hhkmGGnTFJI8S/VwaUbJT2UC6Mxsbv+b3HgKHjSGKDf66wwK9kDo/BSwzOcfzV9KVxlr0kzLDiZKLttBcLfGJJIA1D05eQ2FdAvoLIhu2RwTTkPbuUY4YdRWpZOCYstrsMI6cu+MQJiwEf1mt93c7GDE3wwl60Rl3nrJk4rvZJGwZMpuGW9CTnjrHAUO7ZiKJF3UjsPL7llKjmd41JovX13TobWFrhZKUB45giWP8aYjshw6kh+ZCgDtbXEHyOY4ZNXz4u8vyFyS3AS8Ng+hjZC1xlheBnEUOSHMdR1XnrbeQKi+2F/Q3SLkOx4hRq09kvl8L3RVYc9clQqFbBcU/moB+1LE1Qj2uedCJpsMCVllc3PieOx4tZKsG03AL588SxhU/5Gjbfnu+WvKmCTUB+OklDAifrHLTkVWQCxZ0ioweJtlMpZhLT9cxC86Nk5vEf84d8vYSDjIZDF+1CkpamWHhqeUkxXGMM/47xcA3afyR6cVr4t6w6R9ZrGProdN6s6yL7ZJy5Gqc2a3EYSkr8I7px1Ou3nuN51vtI0VKpUm93mjCmiiMW2wEPfFbLjeFO/TuS65XE3d8xvvf66fMLjuMfCpNW8g==
+sidebar_class_name: "get api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/jack/hubclients"}
+>
+
+</MethodEndpoint>
+
+Gets the hub send and receive channels.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"hubClients"}
+                        required={true}
+                        schemaName={"object"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"object","description":"The current hubclients on the host."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"hubClients\": {}\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

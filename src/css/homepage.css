@@ -1,0 +1,90 @@
+/**
+* This is the CSS file for the homepage
+*/
+
+:root {
+  --homePageContainerSplitGap: 60px;
+}
+
+.homePageContainer {
+  padding: 80px 80px;
+}
+
+.homePageContainer.reset-padding {
+  padding: 0;
+}
+
+.homePageContainer.split-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--homePageContainerSplitGap);
+}
+
+.homePageContainer.split-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--homePageContainerSplitGap);
+}
+
+.homePageContainer.split-5 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/**
+ * Avatars
+ */
+
+ul.avatars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  border-radius: 50%;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.avatars li {
+  width: 100px;
+  padding: 0;
+}
+
+ul.avatars li p {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/**
+ * Breakpoints
+ */
+
+@media screen and (max-width: 996px) {
+  .homePageContainer.split-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 40px;
+  }
+
+  .homePageContainer.split-5 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1440px) {
+  .homePageContainer.split-5 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .homePageContainer.split-5 h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}

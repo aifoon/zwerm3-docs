@@ -1,0 +1,133 @@
+---
+id: jack-controller-isrunning
+title: "isrunning"
+description: "Gets a boolean value if the Jack Daemon is running or not."
+sidebar_label: "isrunning"
+hide_title: true
+hide_table_of_contents: true
+api: eJylUzuP2zAM/isEly6Gk95t3tIHDtepOFyXBkHBKLxYiSzpJDppYPi/F7SNPJB2qhcLIv2R38MdhsiJxAb/vMEKv5HZfw5eUnCO0y+bU+u99VsscMPZJBu1FSt8YslAsA7BMXk4kGsZ7BtIzaAg8IW4CR5shgkCQgIfpMQCIyVqWDhlrJarAhPnGHzmjFWHD/O5vm7HYYEmeGEvWqMYnTXD1rNd1oYOs6m5IT3JKTJWGNY7NqLTknIUO8I3nDNt+aoxS/obwwVMrXC0UoNxTAmsfwupGSbDsSb5kGEbBnK+xL7ALCRtvgKfBLpDf635VrwS+16VeG9t4g1Wy/OmZ9RVgWLFKewi2k/j1y+TdtjrU6DQVlXFHZm9ftGw1EGt3fIgBkmNFc60PLu2N3M6nA1RmgOJadzPI6cGHss5LL4/33G5qarj5IeT1CRwtM5BQ16FJNCxQH4zHCTZCMGDcZa9DNfjFpoRXWaE/1g+lPMpAGQ0AMozhiwNDdZ7anjKLlzCC/8Mb3fJ0v/lePJY+LfMoiPrNQJtcjpiFHryocDLMqsC65BFa123psw/kut7vX5vOZ1GAw6ULK1V++WqL7Bm2nDCatnhnk/qvzEc1c9hYazuf4n+2vunr6/Y938A0rZYSQ==
+sidebar_class_name: "get api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/jack/isrunning"}
+>
+
+</MethodEndpoint>
+
+Gets a boolean value if the Jack Daemon is running or not.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"status"}
+                        required={true}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","description":"The boolean value."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"status\": true\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

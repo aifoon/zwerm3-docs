@@ -1,0 +1,24 @@
+.homePageArchitectureCardLink {
+  text-decoration: none;
+  color: var(--white);
+  height: 100%;
+}
+
+.homePageArchitectureCardLink:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.homePageArchitectureCardLink:hover .homePageArchitectureCard {
+  background-color: var(--primary-200);
+  /* border: 1px solid var(--primary-300); */
+}
+
+.homePageArchitectureCard {
+  background-color: #5655743d;
+  border: 1px solid var(--primary-200);
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  transition: background-color 0.2s;
+}

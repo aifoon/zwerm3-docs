@@ -1,0 +1,198 @@
+---
+id: scripts-controller-exec
+title: "exec"
+description: "Get a value from a configuration key."
+sidebar_label: "exec"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVEtv2zAM/isEL9sAL8m6m29ZNwy9rEXXXRYUA2MzsVpZciU6Dxj+7wNlt0mXPXqYD7YsUXx830d26BsOJMa7ixJz/FoE00g8906Ct5bDD95xgRmWHNOR8Q5z/MwCBBuyLcMq+BoICu9WZt0OvuCe9xPMsKFANQuHiPniNsPADy1H+eDLPeZd+jWBS8wltJxh4Z2wEz2iprGmSM6md1GDdhiLimvSlewbxhz98o4L0ThByxDDcbDTTL9QzUe2UYJx61TJilormGPF1vqT2m4qBkc1g1+BVAzDGYiH0Drs++wo7cVxrNsMxYjVYNetG5D8KB77frgUG+/ikOHZbKaf54HxvwFQc4y0/kP1xyHnMJrC1kgFhWUKYNzKh3rgcVuRvIqw9satwbsJ9hlGKX0rL3FuTRSFkaxNUNKGjKWlfQQ1ju44hH+7U16iUgYcgg/w2iR+AsOWIpAbtt+oy8KXLyheHfLOCKi5punbMEYYzE7IfsT1CYOn7MeYRxKYN2ZspstWmlauR/6THPoMhdbxIKCoV2uWymsXNj4mUkkqzHE6mkzHVowcNk8dpdK4PnTVpx3VjeVfu2CUep+hkpugGdP8vuVQw/vJDOZXFycQPTsFk2DWlVQksDXWQk1O5UNwR8U9kCvTQoJpwDsorGEnaXvIWoeCJj+4fzc5m8xG2VOhklJktPqakuDdkP0IJBzGEvxuLHWH/nnxhBolIryTaWPJOAWpDVa9DfgfKMowRb3NsFKC8gV23ZIifwu273X7oeWwH3jZUDCqdP3rM6yYSg6YLzq85z3meD5k+vZG46u5bTWPk67vs8cb86LgRv5qe6yhq8uvN5jhchy1dWoJDLTFLL3TvPEJuTQz0l6Hlty6TbMDB5/6/ATWBR/M
+sidebar_class_name: "post api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/scripts/exec"}
+>
+
+</MethodEndpoint>
+
+Get a value from a configuration key.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"scriptName"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"hello","description":"The name of the script to run"}}
+        >
+
+        </SchemaItem>
+      </ul>
+    </details>
+
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"stdout"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A list of all the available scripts"}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"stderr"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"The shell error (if there was an error)"}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"code"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"The exit code of our shell script"}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"stdout\": \"string\",\n  \"stderr\": \"string\",\n  \"code\": \"string\"\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

@@ -4,8 +4,8 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "title": "pd-bee"
+    "type": "doc",
+    "id": "for-developers/pd-bee/introduction"
   },
   "customProps": {
     "description": "More information about pd-bee"

@@ -4,8 +4,8 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "title": "kweenb"
+    "type": "doc",
+    "id": "for-developers/kweenb/introduction"
   },
   "customProps": {
     "description": "More information about kweenb"

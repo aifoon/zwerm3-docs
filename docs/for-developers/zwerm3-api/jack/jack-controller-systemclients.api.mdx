@@ -1,0 +1,133 @@
+---
+id: jack-controller-systemclients
+title: "systemclients"
+description: "Gets the hun send and receive channels."
+sidebar_label: "systemclients"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVk01v2zAMhv8KwcsuhpN1N9+CYii607B1lwXBwMhcrESWVIlOFhj+7wNtr0mbYcB8sSDS/Hje1z2GyInEBv9YY4WfyBzug5cUnOP0I5+zcGucZS8ZC6w5m2SjpmOFDywZpGFoOg+ZfQ3ka0hs2B4ZTEPes8slFhgpUcvCKWO13hSYOMfgM2eserxbLvX1ujYWaIIX9qIxitFZM4652GdN6DGbhlvSk5wjY4Vhu2cj2i3pUmKn8i3nTDu+SsySrN/drLOCORVOVhowjimB9T9DasfOcGpI3mXYBet3EHyJQ4ETofuZ0F+Ged3jqWEwXUrsBaZPYaYLwU8sQ5YSh0EhPXc2cY3V+mWJtw03BYoVpx1X0X69jn2ZGeOgT4FCO6WPezIH/a5laYJqvuMRGkmDFS40vHire+Z0fBFPkYybzo2/nzi18KFcwurz483Gr6JgM5AfT9KQwMk6By15hU6grUcL6UGSjcpkGmK8nqZQP+kwU/n35V25nM1CRs2iu8aQpaXRJp5ano0NF2fDP53dX7z3HyaflRf+JYvoyHr1R5ec1pvozvD/iGguIqrqGu/7LWX+ltww6PVzx+k8UT9SsrRV4OvNUGDDVHPCat3jgc8qvzEcVcgjuU7nuPlnhmvRHz4+4TD8Bhy3Ylo=
+sidebar_class_name: "get api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/jack/systemclients"}
+>
+
+</MethodEndpoint>
+
+Gets the hun send and receive channels.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"systemClients"}
+                        required={true}
+                        schemaName={"object"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"object","description":"The current system clients on the host."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"systemClients\": {}\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

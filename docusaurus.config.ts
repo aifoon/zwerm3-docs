@@ -1,14 +1,16 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
+import type * as Redocusaurus from "redocusaurus";
 
 const config: Config = {
-  title: "Zwerm3 Docs",
+  title: "Zwerm3 Documentation",
   tagline: "Audio streaming and triggering",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://zwerm3-docs.onrender.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -35,23 +37,57 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // editUrl:
-          //   "https://github.com/aifoon/zwerm3-docs/tree/main/packages/create-docusaurus/templates/shared/",
+          docItemComponent: "@theme/ApiItem",
         },
         blog: {},
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "zwerm3-api",
+        docsPluginId: "classic",
+        config: {
+          jacktrip: {
+            specPath: "http://localhost:3000/api-yaml",
+            outputDir: "docs/for-developers/zwerm3-api",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+              sidebarCollapsible: true,
+              sidebarCollapsed: true,
+            },
+
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
       },
     ],
   ],
+
+  themes: ["docusaurus-theme-openapi-docs"],
+
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
-      disableSwitch: false,
+      disableSwitch: true,
       respectPrefersColorScheme: true,
     },
     image: "img/aifoon-zwerm-social-card.jpg",
+    languageTabs: [
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+        variant: "native",
+      },
+    ],
     navbar: {
       title: "Zwerm3",
       logo: {
@@ -60,21 +96,29 @@ const config: Config = {
         srcDark: "img/logo_dark.svg",
       },
       items: [
+        // {
+        //   type: "docSidebar",
+        //   position: "left",
+        //   sidebarId: "forUsersSidebar",
+        //   label: "For Users",
+        // },
+        // {
+        //   type: "docSidebar",
+        //   position: "left",
+        //   sidebarId: "forDevelopersSidebar",
+        //   label: "Technical Docs",
+        // },
         {
-          type: "docSidebar",
-          position: "left",
-          sidebarId: "forUsersSidebar",
-          label: "For Users",
+          type: "custom-latestRelease",
+          position: "right",
         },
         {
-          type: "docSidebar",
-          position: "left",
-          sidebarId: "forDevelopersSidebar",
-          label: "For Developers",
-        },
-        {
-          href: "https://github.com/aifoon/zwerm3-docs",
+          href: "https://github.com/aifoon",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          type: "search",
           position: "right",
         },
       ],
@@ -83,16 +127,7 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "For Users",
-          items: [
-            {
-              label: "Architecture",
-              to: "/docs/for-developers/architecture",
-            },
-          ],
-        },
-        {
-          title: "For Developers",
+          title: "Documentation",
           items: [
             {
               label: "Architecture",
@@ -100,19 +135,19 @@ const config: Config = {
             },
             {
               label: "zwerm3-jack",
-              to: "/docs/category/zwerm3-jack",
+              to: "/docs/for-developers/zwerm3-jack/introduction",
             },
             {
               label: "zwerm3-api",
-              to: "/docs/category/zwerm3-api",
+              to: "/docs/for-developers/zwerm3-api/introduction",
             },
             {
               label: "kweenb",
-              to: "/docs/category/kweenb",
+              to: "/docs/for-developers/kweenb/introduction",
             },
             {
               label: "pd-bee",
-              to: "/docs/category/pd-bee",
+              to: "/docs/for-developers/pd-bee/introduction",
             },
           ],
         },

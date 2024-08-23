@@ -1,0 +1,171 @@
+---
+id: scripts-controller-upload-file
+title: "upload"
+description: "Upload a shell script, the file name will be used as script name."
+sidebar_label: "upload"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsEL7uoSdbdfMsKDNhhWLG2lwXBwNhsrFaWVIluFgT+7wNld27QYqflEoWf7z2SOWGInEhs8F8brPCmTjZKvgpeUnCO068+ukDNF+sYDTacS4ANHiu8Ky4gyC07B6PLgLQM99YxeOoYDtY52DH0mRugPEUV3wINRkrUsXDKWG22BhM/9Zzlc2iOWJ3KT5u4wUpSzwbr4IW9qKvrndhISZb3IXUXDQmpOdctd+Ulx8hYYdg9cC1oXtXa4IgCtwZjUgXEch6zi33OzpKs36NBbUKCFe6sp3TEoXy0ao7B5zH9crXSr3OZ8Aw2xehsXRRfPmQN+Bfmc3Qd50x7fg/eecs1TKFwsNJC7ZgSWD9ysMHDoSX5kGEfrN9D8AscqcwCvbTaGhQrTnuto/02Wn9MnHHSQGifZ1WzJnUsbdCNiiEXIiQtVricQpbjWqHBzOn57/QVYmE3tfx54NTBp8UK1tdf37A884LNQL68pCUZ964jryIQPFD9COSb8pBkIwQPtbPspZhHFLqQCmYs/3FxuVhNw6Nah6dclU9HZWy6w/PNwHw0MLKD967mNC/DfzmgaRGEf8syOrIeB4N9ctppFH2ei8FJ9q3BVudSbfB02lHmu+SGQc1PPafjOIxnSpZ2OofNdjDYMjWcsNqc8JGPWOHVyOPiVhFouOsVyXt3OZiXpHVdc5RX4W/uYXi9Pdffb27R4G76O+hCozlauNQ181NBDsMfdd+psA==
+sidebar_class_name: "post api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/scripts/upload"}
+>
+
+</MethodEndpoint>
+
+Upload a shell script, the file name will be used as script name.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"multipart/form-data"}
+    value={"multipart/form-data-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"script"}
+          required={true}
+          schemaName={"binary"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"binary"}}
+        >
+
+        </SchemaItem>
+      </ul>
+    </details>
+
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

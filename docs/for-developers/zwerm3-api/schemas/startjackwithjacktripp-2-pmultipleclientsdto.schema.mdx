@@ -1,0 +1,278 @@
+---
+id: startjackwithjacktripp-2-pmultipleclientsdto
+title: "StartJackWithJacktripP2PMultipleClientsDto"
+description: ""
+sidebar_label: "StartJackWithJacktripP2PMultipleClientsDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJackWithJacktripP2PMultipleClientsDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={true}
+    className={"schemaItem"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details"}
+    >
+      <summary
+        style={{}}
+      >
+        <span
+          className={"openapi-schema__container"}
+        >
+          <strong
+            className={"openapi-schema__property"}
+          >
+            jack
+          </strong><span
+            className={"openapi-schema__name"}
+          >
+             object
+          </span><span
+            className={"openapi-schema__divider"}
+          >
+            
+          </span><span
+            className={"openapi-schema__required"}
+          >
+            required
+          </span>
+        </span>
+      </summary><div
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"device"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"This is the device name, if empty this defaults the default soundcard","default":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"inputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of input channels","default":2}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"outputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of output channels","default":2}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sampleRate"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The samplerate 22050 | 32000 | 44100 | 48000 | 88200 | 96000 | 192000","default":48000}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"bufferSize"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The buffersize (frames/period) 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096","default":256}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"periods"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The periods/buffer","default":2}}
+        >
+          
+        </SchemaItem>
+      </div>
+    </details>
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"killAllProcessesBeforeStart"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Kills all jack and jacktrip instances before startup"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={true}
+    className={"schemaItem"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details"}
+    >
+      <summary
+        style={{}}
+      >
+        <span
+          className={"openapi-schema__container"}
+        >
+          <strong
+            className={"openapi-schema__property"}
+          >
+            jacktrip
+          </strong><span
+            className={"openapi-schema__name"}
+          >
+             object
+          </span><span
+            className={"openapi-schema__divider"}
+          >
+            
+          </span><span
+            className={"openapi-schema__required"}
+          >
+            required
+          </span>
+        </span>
+      </summary><div
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"bitRate"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Audio Bit Rate Resolutions. Possible values are 8 | 16 | 24 | 32","default":16}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"channels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"debug"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"killAllJacktripBeforeStart"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"clients"}
+          required={false}
+          schemaName={"string[]"}
+          qualifierMessage={undefined}
+          schema={{"default":[{"localPort":4464,"clientName":"client"}],"description":"The local ports on which the Jacktrip instances are running","type":"array","items":{"type":"string"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"queueBuffer"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"realtimePriority"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"connectDefaultAudioPorts"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"receiveChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":2,"description":"Numbers of channels received from network"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"redundancy"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":1,"description":"Packet Redundancy to avoid glitches with packet losses"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"remotePort"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":4464,"description":"The remote port"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sendChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":2,"description":"Numbers of channels sent to network"}}
+        >
+          
+        </SchemaItem>
+      </div>
+    </details>
+  </SchemaItem>
+</ul>
+            

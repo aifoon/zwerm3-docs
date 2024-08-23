@@ -1,0 +1,124 @@
+---
+id: jack-controller-kill
+title: "kill"
+description: "Kills all the jack processes on the machine"
+sidebar_label: "kill"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVUk2L20AM/SuDLr0MTrq9+RZKKduysJT20hCKMlbtScYzsxolaTD+70W22Q/SS30ZIcl6eu9pgJSJUXyK9w3U8AXd8WOKwikE4l9HHwJYaKg49lm7oIavPoRiMAQjHZkDuqPJnByVQsWkOGV7dJ2PBBYyMvYkxAXq7c4CU8kpFipQD3C3Xuvzdj5YcCkKRdEa5hy8mzZcHYo2DFBcRz1qJNdMUEPaH8iJorHyET+P76kUbOlVYxH2sb2htDFLq7l46YwLhGx8/J24n5DNpUN5V0ybfGxNihWMo1J5OnmmBurtM9TOgngJirXJ/mHOfls4w6ifBcFW1QDVTv/oSbqk8rc0kUDpoIaVlleLBYX4/KyhbjaRWpB+Xoh786Fam83j/Q25N1Xji8E4RdKhmIsPwfQYlTvOZmJspkDYZ/XTBU9RpvS8RQUWdJl5/PvqrlovnqFTz5RiTkV6nNyK2NNyWubltsy/bmt4cf4/z2zxV+iPrHJAH2G0cOKgM2c9F7ktTMA7C10qoulh2GOhHxzGUdNPJ+LrrPMZ2eNeJd7uRgsdYUMM9XaAI13VYecoq2NnDCeFvznW8bW7nz99h3H8C7KMLVA=
+sidebar_class_name: "get api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/jack/kill"}
+>
+
+</MethodEndpoint>
+
+Kills all the jack processes on the machine
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

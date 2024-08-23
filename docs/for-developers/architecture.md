@@ -46,5 +46,6 @@ We use the following technical stack:
 - [NodeJS](https://nodejs.org/en)
 - [Typescript](https://www.typescriptlang.org/)
 - [NestJS for zwerm3-api](https://nestjs.com/)
-- [Electron for kweenb](https://www.electronjs.org/)
-- [React for frontend stuff](https://react.dev/)
+- [Electron](https://www.electronjs.org/)
+- [React](https://react.dev/)
+- [Pure Data](https://puredata.info/)

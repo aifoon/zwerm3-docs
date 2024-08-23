@@ -1,0 +1,124 @@
+---
+id: mqtt-controller-broker
+title: "broker"
+description: "Gets the broker address."
+sidebar_label: "broker"
+hide_title: true
+hide_table_of_contents: true
+api: eJx9Us2K20AMfhWhSy8mSbc330Ipyx4WStm9NISi2Ko9yXhmolGSBuN3L7JNdpeU+mIhaaTvRz3GxELqYniqscTno+rXGFSi9yy/dhIPLFhgzbkSl6wPS3xkzaAtw1QHqmvhnBdYYCKhjpUlY7nZFiicUwyZM5Y9PqxW9vs4DAusYlAOajVKybtqBLTcZ2voMVctd2SRXhNjiXG350ptmxh8ddP4jnOmht81ZhUXmjv8a5hb4eK0hcozCbjwO0o3boZLS/opQxNdaCCGBQ6DUTmenHCN5ea2alugOvW2a53c85T9MXPGwb4ClZo8Pjqq2ouOtY2mdsMjCdIWS1xaeXlTPLOcbyoatpHWvOvnhaWDL4sVrL8/3dH7UAWXgcIYaUsKF+c9dBSMPcGeqgNQqMdAxSWIASrvOOiYnlCYsQZmGv958bBYza5RZa4ZyRSzdjT6Fajj+Zbg7Zjg38fUv7n/v7uaDVX+o8vkyQUcCjyJtwGTgLO+Bc57tgW2MasV+n5HmV/FD4OljyeW6yTsmcTRzjTdbIcCW6aaBctNjwe+mqlVxcmGnsmfDMDdfQ7vDX389oLD8Bel6CO3
+sidebar_class_name: "get api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/mqtt/broker"}
+>
+
+</MethodEndpoint>
+
+Gets the broker address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

@@ -1,0 +1,157 @@
+---
+id: startjacktripp-2-pclientdto
+title: "StartJacktripP2PClientDto"
+description: ""
+sidebar_label: "StartJacktripP2PClientDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJacktripP2PClientDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"channels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"debug"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"killAllJacktripBeforeStart"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"localPort"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":4464,"description":"The local port on which the Jacktrip instance is running"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"connectDefaultAudioPorts"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"queueBuffer"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"realtimePriority"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"bitRate"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Audio Bit Rate Resolutions. Possible values are 8 | 16 | 24 | 32","default":16}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"clientName"}
+    required={false}
+    schemaName={"string"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"This is the name of the client (also the remote name)","default":"beeworker"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"receiveChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Numbers of channels received from network"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"redundancy"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":1,"description":"Packet Redundancy to avoid glitches with packet losses"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"sendChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Numbers of channels sent to network"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"host"}
+    required={false}
+    schemaName={"string"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"This is the ip address of the JackTrip server","default":"localhost"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"remotePort"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":4464,"description":"The remote port"}}
+  >
+    
+  </SchemaItem>
+</ul>
+            

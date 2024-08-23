@@ -6,17 +6,7 @@ sidebar_position: 4
 
 This file defines constant variables used throughout the project.
 
-## Table of Contents
-
-- [JACKTRIP_DEFAULT_CLIENT_NAME](#jacktrip_default_client_name)
-- [JACK_DEFAULT_VERSION](#jack_default_version)
-- [JACKTRIP_BIN_PATH](#jacktrip_bin_path)
-- [JACK_BASE_PATH_WIN](#jack_base_path_win)
-- [JACK_BASE_PATH_DARWIN](#jack_base_path_darwin)
-- [JACK_BASE_PATH_LINUX](#jack_base_path_linux)
-- [TIMEOUT_AFTER_RUNNING_PROCESS](#timeout_after_running_process)
-
-### JACKTRIP_DEFAULT_CLIENT_NAME
+## JACKTRIP_DEFAULT_CLIENT_NAME
 
 The default name for a Jacktrip client.
 
@@ -24,7 +14,7 @@ The default name for a Jacktrip client.
 const JACKTRIP_DEFAULT_CLIENT_NAME = "client";
 ```
 
-### JACK_DEFAULT_VERSION
+## JACK_DEFAULT_VERSION
 
 The default version of Jack.
 
@@ -32,7 +22,7 @@ The default version of Jack.
 const JACK_DEFAULT_VERSION = "1.9.19";
 ```
 
-### JACKTRIP_BIN_PATH
+## JACKTRIP_BIN_PATH
 
 The path to the Jacktrip binaries.
 
@@ -40,7 +30,7 @@ The path to the Jacktrip binaries.
 const JACKTRIP_BIN_PATH = path.join(__dirname, "resources/jacktrip/");
 ```
 
-### JACK_BASE_PATH_WIN
+## JACK_BASE_PATH_WIN
 
 The default base path for Jack on Windows.
 
@@ -48,7 +38,7 @@ The default base path for Jack on Windows.
 const JACK_BASE_PATH_WIN = "C:\\\\Program Files (x86)\\\\Jack\\\\";
 ```
 
-### JACK_BASE_PATH_DARWIN
+## JACK_BASE_PATH_DARWIN
 
 The default base path for Jack on macOS.
 
@@ -56,7 +46,7 @@ The default base path for Jack on macOS.
 const JACK_BASE_PATH_DARWIN = "/usr/local/bin";
 ```
 
-### JACK_BASE_PATH_LINUX
+## JACK_BASE_PATH_LINUX
 
 The default base path for Jack on Linux.
 
@@ -64,7 +54,7 @@ The default base path for Jack on Linux.
 const JACK_BASE_PATH_LINUX = "/usr/bin";
 ```
 
-### TIMEOUT_AFTER_RUNNING_PROCESS
+## TIMEOUT_AFTER_RUNNING_PROCESS
 
 Because we need to be sure a Jackd and or Jacktrip process is started safely, this timeout in milliseconds is to wait for Jackd and Jacktrip to start after a process has been detected. So, Jackd waits X milliseconds before starting Jacktrip. This timeout is used to give Jackd and Jacktrip time to initialize properly.
 

@@ -4,51 +4,242 @@
  * work well for content-centric websites.
  */
 
+@import "./homepage.css";
+@import "./openapi.css";
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #565574;
-  --ifm-color-primary-dark: #38394e;
-  --ifm-color-primary-darker: #313246;
-  --ifm-color-primary-darkest: #22223a;
-  --ifm-color-primary-light: #6b64c6;
-  --ifm-color-primary-lighter: #a4a0dc;
-  --ifm-color-primary-lightest: #c1bde7;
-  --ifm-code-font-size: 95%;
-  --ifm-container-width: auto;
-  --ifm-container-width-xl: auto;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
+  --white: #fff;
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-  --ifm-color-primary: #ffffff;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --primary-100: #565574;
+  --primary-200: #38394e;
+  --primary-300: #313246;
+  --primary-400: #22223a;
+  --primary-500: #1b1c31;
+
+  --secondary-100: #c1bde7;
+  --secondary-200: #a4a0dc;
+  --secondary-300: #6b64c6;
+
+  /**
+   * Colors
+   */
+
+  --ifm-color-primary: var(--primary-100);
+  --ifm-color-primary-dark: var(--primary-200);
+  --ifm-color-primary-darker: var(--primary-300);
+  --ifm-color-primary-darkest: var(--primary-400);
+  --ifm-color-primary-light: var(--secondary-300);
+  --ifm-color-primary-lighter: var(--secondary-200);
+  --ifm-color-primary-lightest: var(--secondary-100);
+
+  /**
+   * Menu
+   */
+
+  --ifm-menu-color-background-hover: var(--primary-100);
+  --ifm-menu-color-background-active: var(--primary-100);
+  --ifm-menu-color-active: var(--white);
+
+  /**
+   * Link
+   */
+
+  --ifm-navbar-link-color: var(--white);
+  --ifm-navbar-link-hover-color: var(--primary-75);
+  --ifm-link-color: var(--primary-75);
+  --ifm-link-decoration: underline;
+  --ifm-breadcrumb-color-active: var(--white);
+
+  /**
+   * Container
+   */
+
+  --ifm-global-spacing: 2rem;
+  --ifm-container-width: 1140px;
+  --ifm-container-width-xl: 100%;
+
+  /**
+   * Code
+   */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-heading-margin-bottom: 1rem;
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #1b1c31;
-  --ifm-background-surface-color: #313246;
+  --ifm-background-color: var(--primary-500);
+  --ifm-background-surface-color: var(--primary-300);
 }
+
+/**
+ * Footer
+ */
 
 .footer--dark {
-  --ifm-footer-background-color: #313246;
+  --ifm-footer-background-color: var(--primary-400);
 }
 
-.container {
-  margin: 0 20px;
+.footer__links {
+  margin-bottom: 4rem;
 }
 
-@media screen and (max-width: 996px) {
-  .container {
-    margin: 0 auto;
-  }
+.footer__col {
+  text-align: center;
 }
+
+/**
+ * Lists
+ */
+
+ul {
+  list-style-type: "→";
+  padding: 5px 15px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+/**
+ * Table Of Contents
+ */
+.table-of-contents__link {
+  color: var(--primary-75);
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code {
+  color: var(--primary-75);
+  text-decoration: underline;
+}
+
+.table-of-contents__link--active,
+.table-of-contents__link--active code {
+  background-color: var(--primary-200);
+  border-radius: 10px;
+  padding: 5px 7px;
+  color: var(--primary-75);
+}
+
+.table-of-contents__link--active:hover,
+.table-of-contents__link--active:hover code {
+  color: var(--primary-75);
+  text-decoration: none;
+}
+
+/**
+ * Sidebar
+ */
+
+.theme-doc-sidebar-menu a {
+  text-decoration: none;
+}
+
+/**
+ * Breadcrumbs
+ */
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+/**
+ * Card
+ */
+
+a.card {
+  text-decoration: none;
+}
+
+/**
+ * Navbar logo
+ */
+
+.navbar__brand {
+  text-decoration: none;
+}
+
+/**
+ * Buttons
+ */
+
+button.primary-button {
+  background-color: var(--primary-100);
+  color: var(--white);
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+a.primary-button {
+  display: block;
+  background-color: var(--primary-100);
+  color: var(--white);
+  box-sizing: content-box;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+a.primary-button:hover {
+  background-color: var(--primary-200);
+}
+
+a.secondary-button {
+  display: block;
+  background-color: transparent;
+  border: 1px solid var(--primary-100);
+  color: var(--primary-100);
+  box-sizing: content-box;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+/**
+ * Forms
+ */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+form input,
+form textarea {
+  background-color: var(--primary-300);
+  border: 1px solid var(--primary-100);
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+/**
+ * Breakpoints
+ */
 
 @media screen and (min-width: 1440px) {
   img {

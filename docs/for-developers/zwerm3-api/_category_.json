@@ -4,8 +4,8 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "title": "zwerm3-api"
+    "type": "doc",
+    "id": "for-developers/zwerm3-api/introduction"
   },
   "customProps": {
     "description": "More information about zwerm3-api library"

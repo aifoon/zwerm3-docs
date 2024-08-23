@@ -1,0 +1,242 @@
+---
+id: startjackwithjacktriphubserverdto
+title: "StartJackWithJacktripHubServerDto"
+description: ""
+sidebar_label: "StartJackWithJacktripHubServerDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJackWithJacktripHubServerDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={true}
+    className={"schemaItem"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details"}
+    >
+      <summary
+        style={{}}
+      >
+        <span
+          className={"openapi-schema__container"}
+        >
+          <strong
+            className={"openapi-schema__property"}
+          >
+            jack
+          </strong><span
+            className={"openapi-schema__name"}
+          >
+             object
+          </span><span
+            className={"openapi-schema__divider"}
+          >
+            
+          </span><span
+            className={"openapi-schema__required"}
+          >
+            required
+          </span>
+        </span>
+      </summary><div
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"device"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"This is the device name, if empty this defaults the default soundcard","default":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"inputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of input channels","default":2}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"outputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of output channels","default":2}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sampleRate"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The samplerate 22050 | 32000 | 44100 | 48000 | 88200 | 96000 | 192000","default":48000}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"bufferSize"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The buffersize (frames/period) 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096","default":256}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"periods"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The periods/buffer","default":2}}
+        >
+          
+        </SchemaItem>
+      </div>
+    </details>
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"killAllProcessesBeforeStart"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Kills all jack and jacktrip instances before startup"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={true}
+    className={"schemaItem"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details"}
+    >
+      <summary
+        style={{}}
+      >
+        <span
+          className={"openapi-schema__container"}
+        >
+          <strong
+            className={"openapi-schema__property"}
+          >
+            jacktrip
+          </strong><span
+            className={"openapi-schema__name"}
+          >
+             object
+          </span><span
+            className={"openapi-schema__divider"}
+          >
+            
+          </span><span
+            className={"openapi-schema__required"}
+          >
+            required
+          </span>
+        </span>
+      </summary><div
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"channels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"debug"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"killAllJacktripBeforeStart"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"localPort"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","default":4464,"description":"The local port on which the Jacktrip instance is running"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"connectDefaultAudioPorts"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"queueBuffer"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"realtimePriority"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hubPatchMode"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Hub auto audio patch, only has effect if running HUB SERVER mode, 0=server-to-clients, 1=client loopback, 2=client fan out/in but not loopback, 3=reserved for TUB, 4=full mix, 5=no auto patching. Read the Jacktrip docs: https://ccrma.stanford.edu/docs/common/IETF.html#hub-patching","default":5}}
+        >
+          
+        </SchemaItem>
+      </div>
+    </details>
+  </SchemaItem>
+</ul>
+            

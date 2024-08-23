@@ -1,0 +1,139 @@
+---
+id: startjacktripp-2-pmultipleclientsdto
+title: "StartJacktripP2PMultipleClientsDto"
+description: ""
+sidebar_label: "StartJacktripP2PMultipleClientsDto"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StartJacktripP2PMultipleClientsDto"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"bitRate"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Audio Bit Rate Resolutions. Possible values are 8 | 16 | 24 | 32","default":16}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"channels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"debug"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"killAllJacktripBeforeStart"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"clients"}
+    required={false}
+    schemaName={"string[]"}
+    qualifierMessage={undefined}
+    schema={{"default":[{"localPort":4464,"clientName":"client"}],"description":"The local ports on which the Jacktrip instances are running","type":"array","items":{"type":"string"}}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"queueBuffer"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"realtimePriority"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"connectDefaultAudioPorts"}
+    required={false}
+    schemaName={"boolean"}
+    qualifierMessage={undefined}
+    schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"receiveChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Numbers of channels received from network"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"redundancy"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":1,"description":"Packet Redundancy to avoid glitches with packet losses"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"remotePort"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":4464,"description":"The remote port"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"sendChannels"}
+    required={false}
+    schemaName={"number"}
+    qualifierMessage={undefined}
+    schema={{"type":"number","default":2,"description":"Numbers of channels sent to network"}}
+  >
+    
+  </SchemaItem>
+</ul>
+            

@@ -1,0 +1,120 @@
+---
+id: config-controller-save
+title: "save"
+description: "Saves configuration for this API"
+sidebar_label: "save"
+hide_title: true
+hide_table_of_contents: true
+api: eJydU8Fu2zAM/RWBZy1Ju5tvW7ZDTyvW7LIgGBibsZXIkivRSQPD/z5QduIE7WGYD7YskY/ke08d+IYCsvHuqYAMlt7tTLn0joO3lsKfiEcCDQXFPJhG4iCDFzxSVHmKbYdstfNBcWWi+vL8BBoaDFgTU4iQrTcaAr22FPmrL86QdenXBCog49CShtw7JsdyhE1jTZ5A5/so9TqIeUU1yorPDUEGfrunnKVOkAHYUJTTA51vgiIH48rU/Q5by5DBu1FWFY2DqAOdFXuVB0KmedsUyAS9hiPalv4fNqV/ANzrGxbWqfVLrY0GNmzpKsg39tD3Q0psvIvDuI+LB/ncl07IjKUQD0MPAlgTV14kbnxMxCFXkMF8iJiPOkcKx6tmwv7PSbfvb1g3lq48T0SMDF02eg3G7XyibBzj94lCrT7PFqM97lu+O1UmKnRpxRWyOhlrVY0OS1Ko9pgfFLoiLTiYRnmncmvIcdoeBphJUxTiAP8we5wtYDAZ5mIyoUh4qDHZy2E9ca0m96uP3N9NZv2XizCahumN541F44SeNlgBGjS4qqQh1dtoqESjbA1dt8VIv4Lte9l+bSmcB22OGAxuhdv1ptdQERYUIFtftFkOPX5aSflJoXeXq7+1xvOPlxVo2I6XtPaF5AQ8gU7vZHSfeEj+S3sdWHRli6XEDpjy/AWJOnvE
+sidebar_class_name: "post api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/config/save"}
+>
+
+</MethodEndpoint>
+
+Saves configuration for this API
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"key"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"","description":"The config key to create/update"}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"value"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"","description":"The config value to create/update"}}
+        >
+
+        </SchemaItem>
+      </ul>
+    </details>
+
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+
+        </div><div>
+
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

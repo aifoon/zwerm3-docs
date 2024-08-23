@@ -1,0 +1,382 @@
+---
+id: app-controller-start-jack-with-jacktrip-hub-server
+title: "startJackWithJacktripHubServer"
+description: "Starts a jack process on the machine, then, starts a Jacktrip Hub server."
+sidebar_label: "startJackWithJacktripHubServer"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV21v2zYQ/isH7sM2QLEdxQ5SA/mQpBmavTVL0g1YEAw0dbJYU6RKUnVdR/9lv2W/bDhSRqTYTVKg/iJTOt4d7+W5h2tmKrTcS6MvMjZlJ1V1ZrS3Rim0/zjPrf+Zi8Vf0hf09FZWb+rZNdqPaFnCMnTCyoq2sym7JnEHHN5zsYDKGoHOgdHgC4SSi0JqTGihE3Ab2Y1aeFPPwAXFA5awilteokfr2PT2LmEWP9To/KnJVmy6DktpMWNTb2tMmDDao/b0iVeVkiIcafjekWNr5kSBJad/flUhmzIze4/Ckx1LAfASHX0lx+nZP9dNgcFNkDo3tgyqwZt4BpYwrtTbnE1vn9Oe4UcpsOOF81bq+VYcbwrpQLoQtrgHNC8xAZkDlpVfgSeJDHNeK7+RCwtwptaZ4DYLWsM7NmWsSZjUVe3PCq41KtdxQtflbEcybwp0CNxiUB+FHJgcgh4QG0UdM2mTMFP7b2MmKvqiHcfLSuEV9/giGxDlLfcIaTqajOAeDtLRiJ7j8X58HsX10VEanq8O43r/FQl2HQiSTcJmdZ6jvZafX+hElHfyM8IPOdW3G1Zopcl+hP3D4BHcw+GYbKZHcA/phN5O9lO4/+/f/VFKX9LRmD6NR68OezGZHDYJi9peFnZohYfRq36Am4R56RVuuprK/7U3rLlrEraQSp0odRkbHN0p5sZikOtYnhmjkOuu3tirfU9+kUo54EpF1OA6C38CJEjtPNcCHcyCidhxdUXlvBH6cru2KrZbFji8eXfaAZuXNrB4sqw3wXt8wt+DCNX0RWgdOuLj6m5o06yePx2/nCu3FcDrwiwhbO4elj3kaROLF6dpp5l+np5NjzKCq0vTM7Udq/H4cLyrNMNuqIz1ND6WhRRFwIefH5smmLS11gSjTRgDGoV/HfWf1Jk05IP7+rI8jWIEuUsEjZhR+ZR88QC1nNRDa1IaHbL4ocYaT2NHPduFf5AwRGn4FfXcFwlIDRUXC/RAQNGLVkNzkCsvS7y00ljpV19/snPNZwphowiqVhPkxoJGvzR2IfUcfGGRZ+FQRT275F4Uv5nsBUhHg5zX3rQBqmhnAkarFRTcAeY5Ck+BbRMXmvH6/OrP8ysoTYYJjI5jb+55syeURO1dAvvH8S8oY6oZF4sE0s2rnGtqqaHUMKs9aNOVOji2GPRl4Yg3704TGB/ntVJQyk8JTI61iQ4HV6WeD+AKedavuMwIN4XC+8pNh0MhbMkHVIO5sdkAs3pIAkNhytLo4cX5zU+Dwpfqu6Ke7W3UdjMz2QmxPX7V4m2TdNjObaQoHfi726FmJ10L6pqozlVGu4hp6Wi0DaHsmzGqEp3j8xeQnhNoRWEpfQFCIbc99F4W3H/vYG6oZIweUGG2FXRmypLrbPcoELW1VCObahNReMNLC+M8zYDWO24tX7GESY+l2/a6eZyOzfm2fOnk5aSSV72PV20CQj6oDvicaC77vERbHtDWEn1hiJBXxoWgcl+wKRs+y8hj47SkmZJ19UCczz8FEtQnupGSPmTlEU1Mtyld2mdfgQz1uVA6OexwkfQ5yhBRqjvQRddYOxjbqfTUUGtFOrMnDpgvj4Vougfa410gG+X6OBhamCo0lEmb678phXAwGMHJ5cVWkfe+0uziOvzzBfewlIRIXFMP8B1syGho4Y5eP7AXyndUvz9IB6O2d7mg3iUXqYRKHrqWrhHxlgcP17yWFIUbDpVV/0q2+663fsCHb3rta7vN4yc/rBSXgcfUVpHF2AO37JkeuEsY9TRJrtcz7vCdVU1Drz/UaFexMz5yK2kM0ooGHPKMcn+7ZgtcsSk7i6fbuyF/SFzVAR0eI2GTbHacCIGVf1K229eXb69vWMJm7X22DBXFLF8SkvBlxGBTRV5BF156t2aK63kd8JRFnfT7H3sJeTk=
+sidebar_class_name: "post api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/startJackWithJacktripHubServer"}
+>
+
+</MethodEndpoint>
+
+Starts a jack process on the machine, then, starts a Jacktrip Hub server.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  jack
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"device"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"This is the device name, if empty this defaults the default soundcard","default":""}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"inputChannels"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"These are the numbers of input channels","default":2}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"outputChannels"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"These are the numbers of output channels","default":2}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"sampleRate"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"The samplerate 22050 | 32000 | 44100 | 48000 | 88200 | 96000 | 192000","default":48000}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"bufferSize"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"The buffersize (frames/period) 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096","default":256}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"periods"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"The periods/buffer","default":2}}
+              >
+
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"killAllProcessesBeforeStart"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true,"description":"Kills all jack and jacktrip instances before startup"}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  jacktrip
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"channels"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","default":2,"description":"Number of Input and output channels"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"debug"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean","default":false,"description":"Show debug information"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"killAllJacktripBeforeStart"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean","default":false,"description":"Kills all jacktrip instances before startup"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"localPort"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","default":4464,"description":"The local port on which the Jacktrip instance is running"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"connectDefaultAudioPorts"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean","default":true,"description":"Boolean if we need to make default audio connections"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"queueBuffer"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"Queue Buffer Length, in packet size","default":4}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"realtimePriority"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean","default":true,"description":"Enable realtime priority for networking threads"}}
+              >
+
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"hubPatchMode"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"Hub auto audio patch, only has effect if running HUB SERVER mode, 0=server-to-clients, 1=client loopback, 2=client fan out/in but not loopback, 3=reserved for TUB, 4=full mix, 5=no auto patching. Read the Jacktrip docs: https://ccrma.stanford.edu/docs/common/IETF.html#hub-patching","default":5}}
+              >
+
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"runningCommand"}
+                        required={true}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"description":"The current running command on the host.","type":"array","items":{"type":"string"}}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"runningCommand\": [\n    \"string\"\n  ]\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

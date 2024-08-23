@@ -1,0 +1,225 @@
+---
+id: jack-controller-start
+title: "start"
+description: "Starts a jack process on the machine. This will send a response if the process is up & running."
+sidebar_label: "start"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vc1y2zYQfpWdPfRnhpUoRtLYvLluD+mlGdu91OPprMiVCJsEGAC0osh8lzxLn6yzABlJUdrxIVNeQGAX+/992KNp2ZJXRr8tMcffqHi6NtpbU9ds/3KerMcES3aFVa2oYY63cuqA4JGKJ2itKdg5MBp8xdBQUSnNE7irlIOtqmtwrEsgsOxaox2DWgfN8aJy0LXwHdhOa6U3E0ywJUsNe7YO8/uHBC2/79j5n025w3wftspyibm3HSdYGO1ZexFR29aqCAlNH52Eu0dXVNyQ/Pldy5ijWT1yIXm1VtL3ip1IS35WBR/pOW+V3pzlHzJTLiQR74CmhhNJjJvW78CLRslr6mo/6oUNONPpsiBbBqvhDHPEPkGl285fV6Q11+4oCN01K7ZfCYIdA1kO5qOSA7OGYAeK0dCRm6xP0HT+27iJhv7Vj6OmrfmGPL/KB0R9S54hy9JFCi/wJktTWefzWVwv4v7iIgvr5TLuZ5eieBxA0OwTXHXrNdtb9fGVQUR9pz4y/LCWCXTTlq0y5Y8wW4aI4AWWc/GZXcALZAs5XcwyePn70yzNRJKlcxHN08vlSU0Wyz7BaO11ZYdBeRqjOi1wn6BXvuYRjYLbX7zBvhfRiLTgKEvTONzH9vGbgaZh52jzCtRcwaAKW+UrKGomC0qvjW2CZ9hW5L93sDFKb8DoiYBi4IRr0zSky/M8pE5FZy1rP/IHFFF5JKTKOC+cMkRH1tIOE1SeG3ce9VC/kV/uP+d3FsvDoQVXrbo5Ed4MDQj9kF7RRpgMhTDlYsO+MsK3rXGhpOQrzHEq8ulIuo7t82cGlLbcHFjw1w8BL8esdaj7F0ySnaM+OwVowMspXLLF8mhcs8BPaxPqNST955ZtA28mKVy9e3vW7ROpkCXp8Ocr8vFVaEjLMAyviDRMfrxVrXSuqJX0VI5jHaSFUo5ofjbJJukwxFTIEEuZpZoNhfEVQh7eMzg8aPDVB21/wML/8LYN8+b5g5+2NSktc97ZWuKIczDMSYIx2ocEZYblfL9fkeM/bN33cvy+Y7uL8/FMVtFKGnP/0CdYMZVsMb/f4xPvMMfrmOFPd+Jd1OsuoOFL5PfJeOOqKLj1/6l7PMnvfr+9wwRXwxPdmFLuWNoKcmgbOceEigfYhbM91qQ3XeAPjDbl+wfjseol
+sidebar_class_name: "post api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/jack/start"}
+>
+
+</MethodEndpoint>
+
+Starts a jack process on the machine. This will send a response if the process is up & running.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"device"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"This is the device name, if empty this defaults the default soundcard","default":""}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"inputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of input channels","default":2}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"outputChannels"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"These are the numbers of output channels","default":2}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sampleRate"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The samplerate 22050 | 32000 | 44100 | 48000 | 88200 | 96000 | 192000","default":48000}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"bufferSize"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The buffersize (frames/period) 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 4096","default":256}}
+        >
+
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"periods"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"The periods/buffer","default":2}}
+        >
+
+        </SchemaItem>
+      </ul>
+    </details>
+
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"runningCommand"}
+                        required={true}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"description":"The current running command on the host.","type":"array","items":{"type":"string"}}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"runningCommand\": [\n    \"string\"\n  ]\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

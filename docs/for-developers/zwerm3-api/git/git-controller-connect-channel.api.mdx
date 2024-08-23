@@ -1,0 +1,124 @@
+---
+id: git-controller-connect-channel
+title: "pull"
+description: "Pulls the latest code of the api (internet connection needed)."
+sidebar_label: "pull"
+hide_title: true
+hide_table_of_contents: true
+api: eJylUk2P00AM/SuWL4AUtWW55Vb1AHtAqhBcqCrkTrzJdCee2Rm3ZRXlvyMnZT+04kQuY9mOn5/fGzAmzqQ+ym2DNX72uomiOYbA+ZeLIux005EIB6yw4eKyT9aONW5PIRTQjiGQclFwsWGId1OKkof3XpSzsFWmST4KCHPDzYcFVpgoU8/KuWC921eYuaQohQvWA96sVva8hsQKXRRlUatRSsG7afvlsVjDgMV13JNF+pgYa4yHIzs1tGxc1c/jey6FWn7RWDR7ad+wXMO1FS5eO3CBKYOXu5j7CRkuHem7Am300kKUBY6jUXk4+cwN1rsnqH2F6jUY1jr5r3P225UzjvZVqNTaNbD1aj/0rF00ZRKp66abaYc1Lluvy3QKpkrhfH66oW02kboi/bxw7uHTYgXr7e0bcq+q4AuQTJF2pHDxIUBPYtwJjuTugaSZAs0+QRRwwbPolJ63MFltmXn8x8XNYnXVjJxpZhRTLNrTpJZQz7Pt4Nl3f90C/zDe8OyB//fgVXzl37pMgbzgWOEpB4OZbz1rUeF07X2FXSxq2WE4UOEfOYyjpR9OnB9nDc6UPR3s/Lv9WGHH1HDGejfgPT+a+s5xspFnCidDf2Pk8aX02/X3zRccxz8g90KL
+sidebar_class_name: "patch api-method"
+info_path: docs/for-developers/zwerm3-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading as={"h1"} className={"openapi__heading"} children={""}></Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/git/pull"}
+>
+
+</MethodEndpoint>
+
+Pulls the latest code of the api (internet connection needed).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A message with clear information what's going on."}}
+                      >
+
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+
+  </div>
+</div>

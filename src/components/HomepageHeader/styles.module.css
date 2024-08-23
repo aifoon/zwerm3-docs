@@ -1,0 +1,53 @@
+/**
+ * Styles for HomepageHeader component
+ */
+
+.heroImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroTextContainer h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroTextContainer .heroText {
+  margin-bottom: 40px;
+}
+
+.heroTextContainer .heroTextCta {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  .heroTextContainer {
+    text-align: center;
+  }
+
+  .heroTextContainer .heroText h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroTextContainer .heroText h2 {
+    font-size: 1.25rem;
+  }
+
+  .heroTextContainer .heroTextCta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroTextContainer .heroText {
+    margin-bottom: 20px;
+  }
+}
