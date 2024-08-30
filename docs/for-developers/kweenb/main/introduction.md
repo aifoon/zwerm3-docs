@@ -15,7 +15,7 @@ Find out more about each component:
   - Dictionaries
   - Exceptions
   - Installers
-  - [KweenB](library/kweenb)
+  - KweenB
     - BeeStatesWorker
     - BeeSsh
     - [BeeHelpers](library/kweenb/BeeHelpers)
