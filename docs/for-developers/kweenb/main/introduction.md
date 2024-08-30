@@ -1,5 +1,32 @@
 # Main process
 
+## Architecture
+
+![The architecture of the main process of kweenb](/img/for-developers/kweenb/main-architecture.png)
+
+### Explanation
+
+Whenever we receive a call for [an action or method](actions-methods) from the renderer, the request is passed to a controller which uses the library to fullfill the request. When needed, the request alters the lower layer (e.g. CRUD movement in database, sending out signals to socket clients for the trigger interface, executing a command over SSH, etc.)
+
+Find out more about each component:
+
+- Controllers
+- Library
+  - Dictionaries
+  - Exceptions
+  - Installers
+  - [KweenB](library/kweenb)
+    - BeeStatesWorker
+    - BeeSsh
+    - [BeeHelpers](library/kweenb/BeeHelpers)
+    - KweenBHelper
+    - PresetHelper
+    - SettingHelper
+    - Zwerm3ApiHelper
+  - Positioning
+  - OSC
+  - Socket
+
 ## Startup
 
 During startup we initialize parts of the application:

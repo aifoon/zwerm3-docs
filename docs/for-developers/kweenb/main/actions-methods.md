@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Actions and Methods
 
-- An action is one-way direction, it's a function that will be triggered from the renderer but does not expect to have an answer
-- A method is two-way direction, it's a function that will be triggered from the renderer and expect an answer
+- An action is one-way direction, it's a function that will be triggered from the renderer but does not expect to send an answer
+- A method is two-way direction, it's a function that will be triggered from the renderer and expects an answer
 
 ## Bee
 

@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # KweenB
 
+KweenB is a global object that is accessible in the main process.
+
 The `KweenB` class encapsulates methods and state management related to the application’s mode (e.g., P2P), the handling of audio devices (referred to as "bees"), and the management of various installation paths related to the audio processing framework Jack and the JackTrip software. It serves as the bridge between the application’s user interface and its backend functionalities. An instance of this object is shared via a global singleton that can be accessed throughout the main process.
 
 ## `async hasInternet(): Promise<boolean>`
