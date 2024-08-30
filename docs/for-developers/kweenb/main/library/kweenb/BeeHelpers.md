@@ -12,7 +12,7 @@ The `BeeHelpers` module provides various utility functions for managing audio be
 const createBee = async (bee: IBeeInput): Promise<IBee>
 ```
 
-**Description**: Creates a new bee with the provided input parameters.
+Creates a new bee with the provided input parameters.
 
 **Parameters**:
 
@@ -26,7 +26,7 @@ const createBee = async (bee: IBeeInput): Promise<IBee>
 const exportBees = async (filePath: string)
 ```
 
-**Description**: Exports all bees to a specified JSON file.
+Exports all bees to a specified JSON file.
 
 **Parameters**:
 
@@ -38,7 +38,7 @@ const exportBees = async (filePath: string)
 const getAllBees = async (activeState: BeeActiveState = BeeActiveState.ACTIVE)
 ```
 
-**Description**: Retrieves all bees based on their active state.
+Retrieves all bees based on their active state.
 
 **Parameters**:
 
@@ -52,7 +52,7 @@ const getAllBees = async (activeState: BeeActiveState = BeeActiveState.ACTIVE)
 const getAllBeesData = async (activeState: BeeActiveState = BeeActiveState.ACTIVE)
 ```
 
-**Description**: Retrieves all bee data without additional status checks.
+Retrieves all bee data without additional status checks.
 
 **Parameters**:
 
@@ -66,7 +66,7 @@ const getAllBeesData = async (activeState: BeeActiveState = BeeActiveState.ACTIV
 const getAudioScenesForBee = async (bee: IBee): Promise<AudioScene[]>
 ```
 
-**Description**: Fetches audio scenes associated with a specific bee.
+Fetches audio scenes associated with a specific bee.
 
 **Parameters**:
 
@@ -80,7 +80,7 @@ const getAudioScenesForBee = async (bee: IBee): Promise<AudioScene[]>
 const getAudioScenes = async (): Promise<AudioScene[]>
 ```
 
-**Description**: Fetches audio scenes across all active bees.
+Fetches audio scenes across all active bees.
 
 **Returns**: A promise that resolves to an array of [`AudioScene`](../../../types/interfaces#audioscene) objects.
 
@@ -90,7 +90,7 @@ const getAudioScenes = async (): Promise<AudioScene[]>
 const getBee = async (id: number): Promise<IBee>
 ```
 
-**Description**: Retrieves a bee by its unique identifier.
+Retrieves a bee by its unique identifier.
 
 **Parameters**:
 
@@ -104,13 +104,13 @@ const getBee = async (id: number): Promise<IBee>
 const getBeeConfig = async (id: number): Promise<IBeeConfig>
 ```
 
-**Description**: Fetches configuration details for a specified bee.
+Fetches configuration details for a specified bee.
 
 **Parameters**:
 
 - `id`: The ID of the bee whose configuration is requested.
 
-**Returns**: A promise resolving to an [`AudioScene`](../../../types/interfaces#ibeeconfig) object.
+**Returns**: A promise resolving to an [`AudioScene`](../../../types/interfaces#audioscene) object.
 
 ### `getCurrentBeeStates`
 
@@ -118,7 +118,7 @@ const getBeeConfig = async (id: number): Promise<IBeeConfig>
 const getCurrentBeeStates = async (bees: IBee[]): Promise<IBeeState[]>
 ```
 
-**Description**: Fetches current real-time states of the specified bees.
+Fetches current real-time states of the specified bees.
 
 **Parameters**:
 
@@ -132,7 +132,7 @@ const getCurrentBeeStates = async (bees: IBee[]): Promise<IBeeState[]>
 const importBees = async (filePath: string)
 ```
 
-**Description**: Imports bees from a specified JSON file into the database.
+Imports bees from a specified JSON file into the database.
 
 **Parameters**:
 
@@ -144,7 +144,7 @@ const importBees = async (filePath: string)
 const makeP2PAudioConnection = async (bee: IBee)
 ```
 
-**Description**: Establishes a peer-to-peer audio connection for a specified bee.
+Establishes a peer-to-peer audio connection for a specified bee.
 
 **Parameters**:
 
@@ -156,7 +156,7 @@ const makeP2PAudioConnection = async (bee: IBee)
 const setBeeActive = async (id: number, active: boolean)
 ```
 
-**Description**: Sets the active state for a specified bee.
+Sets the active state for a specified bee.
 
 **Parameters**:
 
@@ -169,7 +169,7 @@ const setBeeActive = async (id: number, active: boolean)
 const setBeePozyxTagId = async (bee: IBee, pozyxTagId: string)
 ```
 
-**Description**: Sets the Pozyx tag ID for a specified bee.
+Sets the Pozyx tag ID for a specified bee.
 
 **Parameters**:
 
@@ -182,7 +182,7 @@ const setBeePozyxTagId = async (bee: IBee, pozyxTagId: string)
 const setAudioParam = async (bees: IBee[] | IBee, pdAudioParam: PDAudioParam, value: number | boolean)
 ```
 
-**Description**: Sets a specified audio parameter for one or more bees by sending an OSC data package.
+Sets a specified audio parameter for one or more bees by sending an OSC data package.
 
 **Parameters**:
 
@@ -196,7 +196,7 @@ const setAudioParam = async (bees: IBee[] | IBee, pdAudioParam: PDAudioParam, va
 const startAudio = async (bees: IBee[] | IBee, value: string)
 ```
 
-**Description**: Starts audio for one or more specified bees by sending an OSC trigger to the bee.
+Starts audio for one or more specified bees by sending an OSC trigger to the bee.
 
 **Parameters**:
 
@@ -209,7 +209,7 @@ const startAudio = async (bees: IBee[] | IBee, value: string)
 const stopAudio = async (bees: IBee[] | IBee)
 ```
 
-**Description**: Stops audio for one or more specified bees by sending an OSC trigger to the bee.
+Stops audio for one or more specified bees by sending an OSC trigger to the bee.
 
 **Parameters**:
 

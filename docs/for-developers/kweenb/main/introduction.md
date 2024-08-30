@@ -16,15 +16,15 @@ Find out more about each component:
   - Exceptions
   - Installers
   - KweenB
-    - BeeStatesWorker
-    - BeeSsh
-    - [BeeHelpers](library/kweenb/BeeHelpers)
-    - KweenBHelper
-    - PresetHelper
-    - SettingHelper
-    - Zwerm3ApiHelper
+    - [BeeStatesWorker](library/kweenb/beestatesworker)
+    - [BeeSsh](library/kweenb/beessh)
+    - [BeeHelpers](library/kweenb/beehelpers)
+    - [KweenBHelpers](library/kweenb/kweenbhelpers)
+    - [PresetHelpers](library/kweenb/presethelpers)
+    - [SettingHelpers](library/kweenb/settinghelpers)
+    - [Zwerm3ApiHelpers](library/kweenb/zwerm3apihelpers)
   - Positioning
-  - OSC
+  - [OSC](library/osc)
   - Socket
 
 ## Startup
