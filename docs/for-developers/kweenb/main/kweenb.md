@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # KweenB
 
 KweenB is a global object that is accessible in the main process.

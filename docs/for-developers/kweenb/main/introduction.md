@@ -10,11 +10,11 @@ Whenever we receive a call for [an action or method](actions-methods) from the r
 
 Find out more about each component:
 
-- Controllers
+- [Controllers](controllers)
 - Library
-  - Dictionaries
-  - Exceptions
-  - Installers
+  - [Dictionaries](library/dictionaries)
+  - [Exceptions](library/exceptions)
+  - [Installers](library/installers)
   - KweenB
     - [BeeStatesWorker](library/kweenb/beestatesworker)
     - [BeeSsh](library/kweenb/beessh)
@@ -23,9 +23,9 @@ Find out more about each component:
     - [PresetHelpers](library/kweenb/presethelpers)
     - [SettingHelpers](library/kweenb/settinghelpers)
     - [Zwerm3ApiHelpers](library/kweenb/zwerm3apihelpers)
-  - Positioning
+  - [Positioning]
   - [OSC](library/osc)
-  - Socket
+  - [Socket](library/socket)
 
 ## Startup
 

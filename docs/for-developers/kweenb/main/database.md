@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Database
 
 The kweenb settings and bees information are stored in a local SQLLite database. Connections and CRUD movements are done via [Sequelize](https://sequelize.org/).

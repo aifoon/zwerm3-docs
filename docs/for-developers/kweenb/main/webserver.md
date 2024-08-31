@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Webserver
 
 To serve the trigger interface, we spin up a local webserver by [Express](https://expressjs.com/) on [startup](kweenb#async-initbeforewindow).

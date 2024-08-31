@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Actions and Methods
 
 - An action is one-way direction, it's a function that will be triggered from the renderer but does not expect to send an answer
