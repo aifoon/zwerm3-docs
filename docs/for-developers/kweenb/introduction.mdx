@@ -63,42 +63,78 @@ The **preload process** acts as a security layer between the Electron main proce
 
 The **renderer** is the frontend of the application. We use React as the frontend framework, building the UI with reusable components. These components are shared with the web interface used for triggering actions.
 
-<LinkButton
-  label="Open in GitHub"
-  link="https://github.com/aifoon/kweenb/tree/main/src/renderer"
-  size="small"
-  icon={<FaGithub />}
-/>
+<LinkButtonGroup>
+  <LinkButton
+    label="Open in docs"
+    link="renderer/introduction"
+    size="small"
+    variant="primary"
+    icon={<FaGlasses />}
+  />
+  <LinkButton
+    label="Open in GitHub"
+    link="https://github.com/aifoon/kweenb/tree/main/src/renderer"
+    size="small"
+    icon={<FaGithub />}
+  />
+</LinkButtonGroup>
 
-### Triggering Interface
+#### Interface (triggering)
 
 The triggering interface is a web application that is served once **kweenb** is fully started. When accessed, it connects to a Socket.io server hosted by **kweenb**, enabling real-time communication with the swarm. This allows the interface to fetch the current swarm, send OSC messages, retrieve audio scenes, and more.
 
-<LinkButton
-  label="Open in GitHub"
-  link="https://github.com/aifoon/kweenb/tree/main/src/interface"
-  size="small"
-  icon={<FaGithub />}
-/>
+<LinkButtonGroup>
+  <LinkButton
+    label="Open in docs"
+    link="interface/introduction"
+    size="small"
+    variant="primary"
+    icon={<FaGlasses />}
+  />
+  <LinkButton
+    label="Open in GitHub"
+    link="https://github.com/aifoon/kweenb/tree/main/src/interface"
+    size="small"
+    icon={<FaGithub />}
+  />
+</LinkButtonGroup>
 
-### React Components
+#### React Components
 
 We reuse React components between the kweenb `renderer` and the web `interface` (for triggering). This shared component architecture allows for faster development and easier updates across both the desktop and web interfaces.
 
-<LinkButton
-  label="Open in GitHub"
-  link="https://github.com/aifoon/kweenb/tree/main/src/components"
-  size="small"
-  icon={<FaGithub />}
-/>
+<LinkButtonGroup>
+  <LinkButton
+    label="Open in docs"
+    link="sharedcomponents"
+    size="small"
+    variant="primary"
+    icon={<FaGlasses />}
+  />
+  <LinkButton
+    label="Open in GitHub"
+    link="https://github.com/aifoon/kweenb/tree/main/src/components"
+    size="small"
+    icon={<FaGithub />}
+  />
+</LinkButtonGroup>
 
-### Types
+#### Types
 
 Everything is typed via Typescript and shared with `main`, `preload`, `renderer` and `interface`. The shared Types can be found in the shared folder.
 
-<LinkButton
-  label="Open in GitHub"
-  link="https://github.com/aifoon/kweenb/tree/main/src/shared"
-  size="small"
-  icon={<FaGithub />}
-/>
+<LinkButtonGroup>
+  <LinkButton
+    label="Open in docs"
+    link="types/interfaces"
+    size="small"
+    variant="primary"
+    icon={<FaGlasses />}
+  />
+  <LinkButton
+    label="Open in GitHub"
+    link="https://github.com/aifoon/kweenb/tree/main/src/shared"
+    size="small"
+    icon={<FaGithub />}
+  />
+</LinkButtonGroup>
