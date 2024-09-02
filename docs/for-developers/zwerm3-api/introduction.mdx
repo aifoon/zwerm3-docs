@@ -2,6 +2,19 @@
 sidebar_position: 1
 ---
 
+import { LinkButton } from "@site/src/components/LinkButton";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+
+<div
+  style={{ marginBottom: "10px", display: "flex", justifyContent: "flex-end" }}
+>
+  <LinkButton
+    label="GitHub Repository"
+    link="https://github.com/aifoon/zwerm3-api"
+    icon={<FaGithub />}
+  />
+</div>
+
 # Introduction
 
 The `zwerm3-api` is a RESTful API built on top of `zwerm3-jack` using the [NestJS framework](https://nestjs.com/). It runs as a background daemon on each bee. Detailed documentation for all endpoints is available in the docs.

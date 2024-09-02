@@ -1,0 +1,53 @@
+import { LinkButton } from "@site/src/components/LinkButton";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+
+<div
+  style={{ marginBottom: "10px", display: "flex", justifyContent: "flex-end" }}
+>
+  <LinkButton
+    label="GitHub Repository"
+    link="https://github.com/aifoon/pd-bee"
+    icon={<FaGithub />}
+  />
+</div>
+
+# Introduction
+
+![A screenshot of pd-bee patch](/img/for-developers/pd-bee/pd-bee.png)
+
+## Startup
+
+Initial values of the patch are:
+
+- **masterBass**: 1 (value from 0 - 2)
+- **masterMid**: 1 (value from 0 - 2)
+- **masterLow**: 1 (value from 0 - 2)
+- **useEq**: 1 (value 0 or 1)
+- **volume**: 1 (value 0 - 100)
+- **fileLoop**: 1 (value 0 or 1)
+
+## Dependencies
+
+- **foonLib**: a library written by aifoon to start playing files
+- **ggee**: ggee is a library by Guenter Geiger with five sections: control, experimental, filters, gui, and signal.
+- **readanysf~**: a patch to read a wav file
+- **osc**: a collection of Pd objectclasses for OSC-messages. These objects only convert between Pd-messages and OSC-messages (binary format), so you will need a separate set of objects that implement the transport (OSI-Layer 4), for instance [udpsend]/[udpreceive] for sending OSC over UDP. Written by Martin Peach.
+- **iemnet**: this is a fork of martin peach's "net" library, that allows low-level interaction with networks on OSI-layer 5 (transport layer).
+
+## OSC Actions
+
+You can send an OSC message over UDP to the bee, to port 9001. This is the protocol
+
+- **/masterBass [0-2]**: sets the lower frequencies
+- **/masterHigh [0-2]**: sets the higher frequencies
+- **/masterMid [0-2]**: sets the mid frequencies
+- **/volume [0-100]**: sets the volume
+- **/fileLoop [0 or 1]**: sets the file loop
+- **/useEq [0 or 1]**: sets equalizing
+- **/start [name of the file].wav**: start a file with the given path (files ore stored on in `/home/pi/pd-bee/files/[filename].wav`)
+- **/stop**: stop the file playing
+
+## Stream and trigger
+
+- Any incoming stream is send to the left and the right channel of the speaker.
+- For triggering, the left and right channel are splitted to the left and right channel of the file itself

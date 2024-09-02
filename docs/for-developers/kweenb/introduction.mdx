@@ -3,6 +3,16 @@ import { LinkButtonGroup } from "@site/src/components/LinkButtonGroup";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaGlasses } from "@react-icons/all-files/fa/FaGlasses";
 
+<div
+  style={{ marginBottom: "10px", display: "flex", justifyContent: "flex-end" }}
+>
+  <LinkButton
+    label="GitHub Repository"
+    link="https://github.com/aifoon/kweenb"
+    icon={<FaGithub />}
+  />
+</div>
+
 # Introduction
 
 ![A screenshot of the kweenb application](/img/hero-image.png)
@@ -99,7 +109,7 @@ The triggering interface is a web application that is served once **kweenb** is 
   />
 </LinkButtonGroup>
 
-#### React Components
+#### Shared Components
 
 We reuse React components between the kweenb `renderer` and the web `interface` (for triggering). This shared component architecture allows for faster development and easier updates across both the desktop and web interfaces.
 
@@ -138,3 +148,42 @@ Everything is typed via Typescript and shared with `main`, `preload`, `renderer`
     icon={<FaGithub />}
   />
 </LinkButtonGroup>
+
+## Builder
+
+For building the application in production and development we use [Vite](https://vitejs.dev/) for each project. Every project is builded by Vite individually and is packaged by [`electron-builder`](https://www.electron.build/index.html) for prodcution prurpose.
+
+## Scripts
+
+This section details the scripts available in the `package.json` file, describing their purpose and usage.
+
+- **build**: Builds the interface, main, preload, and renderer code.
+
+  - **build:interface**: Builds the triggering interface code using Vite.
+  - **build:main**: Builds the main process code using Vite.
+  - **build:preload**: Builds the preload process code using Vite.
+  - **build:renderer**: Builds the renderer process code using Vite.
+
+- **compile**: Compiles the application binaries for production. Runs the build process and uses `electron-builder` with the configuration specified in `.electron-builder.config.js`.
+
+  - **compile:linux**: Compiles the application binaries specifically for Linux, ensuring the use of the system’s FPM (a package manager tool). It runs the build process and uses `electron-builder` for Linux configuration. _WARNING: this is not maintained!!_
+
+- **download-jacktrip**: Executes a script to download Jacktrip binaries.
+
+- **postinstall**: Runs after dependencies are installed, using `electron-builder` to install necessary app dependencies.
+
+- **prepare-publish**: Prepares the application for publication by executing a custom script to clear old binaries and perform other necessary pre-publish tasks.
+
+- **publish**: Prepares the application and compiles it for publication, then runs a script to publish the application to GitHub.
+
+  - **publish:linux**: Prepares and compiles the application for Linux and then publishes it to GitHub.
+
+- **publish-test**: Runs a test of the publication process without full compilation, useful for validating the publish scripts.
+
+- **typecheck**: Typechecks the main, preload, and renderer projects.
+
+  - **typecheck:main**: Typechecks the main process code using TypeScript.
+  - **typecheck:preload**: Typechecks the preload process code using TypeScript.
+  - **typecheck:renderer**: Typechecks the renderer process code using TypeScript.
+
+- **watch**: Runs a custom script (`watch.js`) to monitor and respond to file changes during development.

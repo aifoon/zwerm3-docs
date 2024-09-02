@@ -5,6 +5,19 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
+import { LinkButton } from "@site/src/components/LinkButton";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+
+<div
+  style={{ marginBottom: "10px", display: "flex", justifyContent: "flex-end" }}
+>
+  <LinkButton
+    label="GitHub Repository"
+    link="https://github.com/aifoon/zwerm3-jack"
+    icon={<FaGithub />}
+  />
+</div>
+
 # Introduction
 
 This module contains all the logic related to the Zwerm3 audio system, providing functions to manage Jack and Jacktrip processes, as well as related operations. Basically, we wrote a library around the CLI commands of both Jack and Jacktrip and automated the processes of the audio and streaming protocol. With `spawn`and `spawnSync` of the NodeJS library we start the commands and log out the output if necessary.

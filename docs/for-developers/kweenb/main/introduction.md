@@ -57,3 +57,9 @@ This feature was implemented so kweenb can operate without installing Jack and J
 ## Communication over SSH
 
 In addition to communicating via the **zwerm3-api**, we also communicate with the bees over SSH. Once an SSH client is initiated, the connection is cached in a dictionary. This allows us to reuse the connection whenever needed, improving efficiency by avoiding the overhead of re-establishing the SSH connection each time.
+
+## Vite
+
+We use [Vite](https://vitejs.dev/) as the development server and build tool. During development, Vite spins up a web server with hot reloading, allowing for quick and efficient updates as you work on the code. The built version of the interface is served on the port specified in the constants file.
+
+If you need to use a Node.js module that Vite should package, you must add the package to the `vite.config.js` file, specifically in the object with the `external` property.
