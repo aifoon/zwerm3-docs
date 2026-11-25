@@ -1,0 +1,226 @@
+/* The look of the printed manual (see build-pdf.mjs). A4, made to be read
+   on paper: white pages, dark screenshots, the purple of KweenB for
+   headings and the yellow of the markers for the numbered legends. */
+
+:root {
+  --ink: #1d1d2b;
+  --soft: #5b5b70;
+  --line: #dcdbe8;
+  --purple: #5246b8;
+  --purple-dark: #1b1c31;
+  --purple-wash: #f1f0fa;
+  --marker: #ffb000;
+  --green: #2f8f5b;
+  --amber: #b86a00;
+}
+
+@page {
+  size: A4;
+  margin: 20mm 19mm 22mm 19mm;
+  @bottom-left {
+    content: "KweenB";
+    font: 600 8pt "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    color: #8a8aa0;
+    letter-spacing: 0.08em;
+  }
+  @bottom-right {
+    content: counter(page);
+    font: 600 9pt "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    color: #5b5b70;
+  }
+}
+
+@page cover {
+  margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font: 10.4pt/1.52 "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+body { margin: 0; }
+
+/* ---------- cover ---------- */
+.cover {
+  page: cover;
+  break-after: page;
+  width: 210mm;
+  height: 297mm;
+  padding: 26mm 22mm 20mm;
+  background: var(--purple-dark);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover-logo svg { width: 30mm; height: 30mm; display: block; margin-left: -3mm; }
+.cover-product {
+  font-size: 64pt;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.cover-title {
+  font-size: 30pt;
+  font-weight: 500;
+  color: #c1bde7;
+  margin-top: 4mm;
+}
+.cover-subtitle {
+  font-size: 13pt;
+  color: #a4a0dc;
+  margin-top: 9mm;
+  max-width: 120mm;
+  border-top: 0.6mm solid var(--marker);
+  padding-top: 5mm;
+}
+.cover-foot { font-size: 9.5pt; color: #a4a0dc; line-height: 1.7; }
+.cover-foot div:first-child { color: #fff; font-weight: 600; letter-spacing: 0.06em; }
+.cover-online { margin-top: 4mm; }
+.cover-online b { color: #fff; font-weight: 600; }
+
+/* ---------- contents ---------- */
+.contents { break-after: page; }
+.contents h1 { font-size: 26pt; margin: 0 0 9mm; color: var(--purple-dark); }
+.contents-row {
+  display: flex;
+  align-items: baseline;
+  gap: 3mm;
+  padding: 2.3mm 0;
+  border-bottom: 0.2mm solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 11.5pt;
+}
+.contents-number { width: 8mm; color: var(--purple); font-weight: 700; }
+.contents-title { font-weight: 500; }
+.contents-dots { flex: 1; }
+.contents-page { color: var(--soft); font-weight: 600; }
+
+/* ---------- chapters ---------- */
+.chapter { break-before: page; }
+.contents + .chapter { break-before: auto; }
+
+.opener {
+  border-bottom: 0.8mm solid var(--purple-dark);
+  padding-bottom: 5mm;
+  margin-bottom: 7mm;
+}
+.opener-number {
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+h1 { font-size: 27pt; line-height: 1.1; margin: 1.5mm 0 0; color: var(--purple-dark); letter-spacing: -0.01em; }
+h2 {
+  font-size: 15pt;
+  line-height: 1.25;
+  margin: 9mm 0 2.5mm;
+  color: var(--purple-dark);
+  break-after: avoid;
+}
+h3 { font-size: 11.5pt; margin: 6mm 0 1.5mm; color: var(--purple); break-after: avoid; }
+p { margin: 0 0 3mm; orphans: 3; widows: 3; }
+/* a line that introduces a picture stays with its heading and its picture */
+h2 + p, h3 + p { break-after: avoid; }
+a { color: var(--purple); text-decoration: none; }
+strong { font-weight: 650; color: #14142a; }
+em { color: var(--soft); }
+
+ul, ol { margin: 0 0 3.5mm; padding-left: 6mm; }
+li { margin-bottom: 1.2mm; }
+li > ul, li > ol { margin-top: 1.2mm; }
+
+code {
+  font: 9pt/1.4 "SF Mono", Menlo, Consolas, monospace;
+  background: var(--purple-wash);
+  padding: 0.3mm 1.2mm;
+  border-radius: 1mm;
+}
+pre {
+  background: var(--purple-wash);
+  padding: 3.5mm 4.5mm;
+  border-radius: 2mm;
+  break-inside: avoid;
+  margin: 0 0 4mm;
+}
+pre code { background: none; padding: 0; }
+
+/* ---------- pictures and their legends ---------- */
+figure { margin: 4mm 0 5mm; break-inside: avoid; }
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2mm;
+  border: 0.2mm solid #c9c8da;
+}
+ol.legend {
+  list-style: none;
+  counter-reset: legend;
+  padding: 0;
+  margin: 4mm 0 0;
+}
+ol.legend > li {
+  counter-increment: legend;
+  position: relative;
+  padding-left: 8.5mm;
+  margin-bottom: 1.8mm;
+  break-inside: avoid;
+}
+ol.legend > li::before {
+  content: counter(legend);
+  position: absolute;
+  left: 0;
+  top: 0.1mm;
+  width: 5.4mm;
+  height: 5.4mm;
+  border-radius: 50%;
+  background: var(--marker);
+  color: #16162a;
+  font-size: 8.5pt;
+  font-weight: 700;
+  line-height: 5.4mm;
+  text-align: center;
+}
+
+/* ---------- tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2mm 0 5mm;
+  font-size: 9.6pt;
+  break-inside: auto;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th {
+  text-align: left;
+  background: var(--purple-dark);
+  color: #fff;
+  font-weight: 600;
+  padding: 2mm 3mm;
+}
+th:empty { background: var(--purple-dark); }
+td { padding: 2mm 3mm; border-bottom: 0.2mm solid var(--line); vertical-align: top; }
+tbody tr:nth-child(even) td { background: #f8f8fc; }
+
+/* ---------- notes, tips and warnings ---------- */
+.box {
+  border-left: 1.1mm solid var(--purple);
+  background: var(--purple-wash);
+  padding: 3.2mm 4.5mm 0.6mm;
+  margin: 4mm 0 5mm;
+  border-radius: 0 2mm 2mm 0;
+  break-inside: avoid;
+}
+.box-tip { border-color: var(--green); background: #eef8f2; }
+.box-warning, .box-danger { border-color: var(--marker); background: #fff6e0; }

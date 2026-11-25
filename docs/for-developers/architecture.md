@@ -6,6 +6,10 @@ sidebar_label: Architecture
 description: The technical architecture of the whole zwerm3 project
 ---
 
+:::warning Outdated
+These developer pages were written in 2024 and describe the first version of the software of the bees. The system has changed a lot since. They are kept for reference; for how to use KweenB today, read the [manual](/docs/manual/welcome).
+:::
+
 ## Overview
 
 The architecture of Zwerm3 is evolving iteratively, blending practical insights with theoretical decisions.

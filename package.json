@@ -12,7 +12,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "manual:shots": "node tools/shots-kweenb.mjs && node tools/shots-satellite.mjs",
+    "manual:pdf": "node tools/build-pdf.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",

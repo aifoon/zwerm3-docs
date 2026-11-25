@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Zwerm3",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Zwerm3 Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Manual": {
+    "message": "Handleiding",
+    "description": "Navbar item with label Manual"
+  },
+  "item.label.For developers (2024)": {
+    "message": "Voor ontwikkelaars (2024)",
+    "description": "Navbar item with label For developers (2024)"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

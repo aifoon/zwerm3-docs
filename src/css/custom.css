@@ -259,3 +259,44 @@ form textarea {
     --ifm-global-spacing: 2rem;
   }
 }
+
+/**
+ * The manual: pictures, and the numbered lists that explain them. The
+ * numbers get the same yellow circle as the markers in the pictures.
+ */
+.markdown p > img {
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+  display: block;
+  max-height: 80vh;
+  width: auto;
+}
+
+.markdown p:has(> img) + ol {
+  list-style: none;
+  counter-reset: legend;
+  padding-left: 0;
+}
+
+.markdown p:has(> img) + ol > li {
+  counter-increment: legend;
+  position: relative;
+  padding-left: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown p:has(> img) + ol > li::before {
+  content: counter(legend);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: #ffb000;
+  color: #16162a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  text-align: center;
+}

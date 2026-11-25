@@ -1,0 +1,118 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.forDevelopersSidebar.category.zwerm3-jack": {
+    "message": "zwerm3-jack",
+    "description": "The label for category zwerm3-jack in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Types": {
+    "message": "Types",
+    "description": "The label for category Types in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Types.link.generated-index.title": {
+    "message": "Types",
+    "description": "The generated-index page title for category Types in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.zwerm3-api": {
+    "message": "zwerm3-api",
+    "description": "The label for category zwerm3-api in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.zwerm3": {
+    "message": "zwerm3",
+    "description": "The label for category zwerm3 in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.zwerm3.link.generated-index.title": {
+    "message": "zwerm3",
+    "description": "The generated-index page title for category zwerm3 in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.jacktrip": {
+    "message": "jacktrip",
+    "description": "The label for category jacktrip in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.jacktrip.link.generated-index.title": {
+    "message": "jacktrip",
+    "description": "The generated-index page title for category jacktrip in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.jack": {
+    "message": "jack",
+    "description": "The label for category jack in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.jack.link.generated-index.title": {
+    "message": "jack",
+    "description": "The generated-index page title for category jack in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.config": {
+    "message": "config",
+    "description": "The label for category config in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.config.link.generated-index.title": {
+    "message": "config",
+    "description": "The generated-index page title for category config in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.mqtt": {
+    "message": "mqtt",
+    "description": "The label for category mqtt in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.mqtt.link.generated-index.title": {
+    "message": "jacktrip",
+    "description": "The generated-index page title for category mqtt in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.git": {
+    "message": "git",
+    "description": "The label for category git in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.git.link.generated-index.title": {
+    "message": "git",
+    "description": "The generated-index page title for category git in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.scripts": {
+    "message": "scripts",
+    "description": "The label for category scripts in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.scripts.link.generated-index.title": {
+    "message": "scripts",
+    "description": "The generated-index page title for category scripts in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Schemas": {
+    "message": "Schemas",
+    "description": "The label for category Schemas in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Schemas.link.generated-index.title": {
+    "message": "Schemas",
+    "description": "The generated-index page title for category Schemas in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.kweenb": {
+    "message": "kweenb",
+    "description": "The label for category kweenb in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Interface (triggering)": {
+    "message": "Interface (triggering)",
+    "description": "The label for category Interface (triggering) in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Hooks": {
+    "message": "Hooks",
+    "description": "The label for category Hooks in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Main Process": {
+    "message": "Main Process",
+    "description": "The label for category Main Process in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Library": {
+    "message": "Library",
+    "description": "The label for category Library in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.KweenB": {
+    "message": "KweenB",
+    "description": "The label for category KweenB in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.KweenB.link.generated-index.title": {
+    "message": "KweenB",
+    "description": "The generated-index page title for category KweenB in sidebar forDevelopersSidebar"
+  },
+  "sidebar.forDevelopersSidebar.category.Renderer Process": {
+    "message": "Renderer Process",
+    "description": "The label for category Renderer Process in sidebar forDevelopersSidebar"
+  }
+}

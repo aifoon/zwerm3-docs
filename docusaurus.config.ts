@@ -6,7 +6,7 @@ import type * as Redocusaurus from "redocusaurus";
 
 const config: Config = {
   title: "Zwerm3 Documentation",
-  tagline: "Audio streaming and triggering",
+  tagline: "The manual of KweenB and the Zwerm3 speakers",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -28,7 +28,11 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "nl"],
+    localeConfigs: {
+      en: { label: "English" },
+      nl: { label: "Nederlands" },
+    },
   },
 
   presets: [
@@ -96,18 +100,22 @@ const config: Config = {
         srcDark: "img/logo_dark.svg",
       },
       items: [
-        // {
-        //   type: "docSidebar",
-        //   position: "left",
-        //   sidebarId: "forUsersSidebar",
-        //   label: "For Users",
-        // },
-        // {
-        //   type: "docSidebar",
-        //   position: "left",
-        //   sidebarId: "forDevelopersSidebar",
-        //   label: "Technical Docs",
-        // },
+        {
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "manualSidebar",
+          label: "Manual",
+        },
+        {
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "forDevelopersSidebar",
+          label: "For developers (2024)",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
         {
           type: "custom-latestRelease",
           position: "right",
@@ -129,6 +137,10 @@ const config: Config = {
         {
           title: "Documentation",
           items: [
+            {
+              label: "Manual",
+              to: "/docs/manual/welcome",
+            },
             {
               label: "Architecture",
               to: "/docs/for-developers/architecture",

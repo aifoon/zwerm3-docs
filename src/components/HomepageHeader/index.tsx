@@ -1,11 +1,14 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React from "react";
+import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import useGitHub from "@site/src/hooks/useGitHub";
 
 export const HomepageHeader = () => {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig, i18n } = useDocusaurusContext();
   const latesteRelease = useGitHub();
   return (
     <header className="header">
@@ -21,19 +24,23 @@ export const HomepageHeader = () => {
           <div className={styles.heroText}>
             <Heading as="h1">{siteConfig.title}</Heading>
             <Heading as="h2">
-              Zwerm3 is a flexible audio system for streaming audio to and
-              triggering local audio files on mobile speakers. Here you can find
-              the technical documentation for all the core software components
-              that have been developed by{" "}
-              <a href="https://aifoon.org">aifoon</a>.
+              <Translate id="home.intro">
+                Zwerm3 is the swarm of wireless speakers of aifoon. KweenB is
+                the program that runs it. Here you find the manual: how to use
+                the swarm, stream to it, trigger sounds, and look after the
+                speakers.
+              </Translate>
             </Heading>
           </div>
           <div className={styles.heroTextCta}>
+            <Link to="/docs/manual/welcome" className="primary-button">
+              <Translate id="home.openManual">Open the manual</Translate>
+            </Link>
             <a
-              href="/docs/for-developers/architecture"
-              className="primary-button"
+              href={useBaseUrl(`/pdf/kweenb-manual-${i18n.currentLocale}.pdf`)}
+              className="secondary-button"
             >
-              Start reading
+              <Translate id="home.downloadPdf">Download as PDF</Translate>
             </a>
             {latesteRelease && (
               <a
