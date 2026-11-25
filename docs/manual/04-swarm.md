@@ -48,12 +48,14 @@ Hold the mouse over a sign to read the exact value.
 
 ### 6G or 5G
 
-The router of the swarm has two networks for the bees. A bee chooses by itself:
+The router of the swarm has two networks for the bees, and the swarm is spread over both. One network can not carry all bees at once: the sound would arrive late.
 
-- **6G** is the one a bee prefers: it is the quietest, so the sound arrives best. A bee moves to it within a minute after it is switched on.
-- **5G** reaches further. A bee that stands too far from the router for 6G uses this one.
+- Bees with an **even** number use **6G**.
+- Bees with an **odd** number use **5G**.
 
-A bee never changes network while it is streaming or playing, because you would hear that. It waits until you disconnect. So a bee that shows **5G** with few bars during a show is a bee to put closer to the router next time.
+A bee goes to its network by itself, within a minute after it is switched on. A bee for 6G that stands too far from the router uses 5G instead, because 5G reaches further.
+
+A bee never changes network while it is streaming or playing, because you would hear that. It waits until you disconnect. So an even-numbered bee that shows **5G** during a show stands too far from the router: put it closer next time.
 
 ## The battery of a bee
 

@@ -48,12 +48,14 @@ Hou de muis boven een teken om de precieze waarde te lezen.
 
 ### 6G of 5G
 
-De router van de zwerm heeft twee netwerken voor de bees. Een bee kiest zelf:
+De router van de zwerm heeft twee netwerken voor de bees, en de zwerm is over beide verdeeld. Eén netwerk kan niet alle bees tegelijk aan: het geluid zou te laat aankomen.
 
-- **6G** heeft de voorkeur van een bee: het is het rustigste netwerk, dus het geluid komt er het best aan. Een bee gaat er binnen de minuut na het aanzetten naartoe.
-- **5G** reikt verder. Een bee die te ver van de router staat voor 6G gebruikt dit netwerk.
+- Bees met een **even** nummer gebruiken **6G**.
+- Bees met een **oneven** nummer gebruiken **5G**.
 
-Een bee verandert nooit van netwerk terwijl ze streamt of speelt, want dat zou je horen. Ze wacht tot je de verbinding verbreekt. Een bee die tijdens een voorstelling **5G** toont met weinig streepjes zet je de volgende keer dus beter dichter bij de router.
+Een bee gaat zelf naar haar netwerk, binnen de minuut na het aanzetten. Een bee voor 6G die te ver van de router staat gebruikt 5G, omdat 5G verder reikt.
+
+Een bee verandert nooit van netwerk terwijl ze streamt of speelt, want dat zou je horen. Ze wacht tot je de verbinding verbreekt. Een bee met een even nummer die tijdens een voorstelling **5G** toont staat dus te ver van de router: zet ze de volgende keer dichter.
 
 ## De batterij van een bee
 
