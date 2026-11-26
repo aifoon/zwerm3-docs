@@ -8,7 +8,7 @@ The **Routing** page decides which channel of your audio software goes to which 
 2. **All bees: mono or stereo.** Sets all bees at once. A mono bee plays its one channel on both sides. A stereo bee has a left and a right channel.
 3. **Cords.** Quick ways to plug everything in at once (see below).
 4. **A channel** of the sound device. The bar in front of it moves when your audio software plays on that channel.
-5. **A cord.** Click the dot on a cord to unplug it.
+5. **A cord.** Click a cord to select it (it lights up) and press Delete to unplug it. A click on the dot in its middle unplugs it at once.
 6. **The input of a bee.** A mono bee has one input, **sound**. A stereo bee has two: **left** and **right**.
 7. **mono / stereo** for this bee only. Click to switch.
 
@@ -33,7 +33,7 @@ If you choose another device under **Audio device** on the Settings page, KweenB
 ## Plugging cords
 
 - **Plug in:** drag from the dot of a channel to the input of a bee.
-- **Unplug:** click the dot in the middle of a cord.
+- **Unplug:** click a cord so it lights up and press Delete (or Backspace). Or click the dot in the middle of the cord.
 
 The three **Cords** buttons do it for all bees at once:
 

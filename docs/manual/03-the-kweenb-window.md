@@ -24,7 +24,7 @@ Both are explained in [Streaming](./05-streaming.md).
 
 ![The power dialog](/img/manual/power.png)
 
-1. **Close KweenB.** Quits the program. KweenB first stops the sound on the bees.
+1. **Close KweenB.** Quits the program. The bees are left as they are, so someone else on the network can go on working with them. To stop the sound on the bees, press **Disconnect** before you close.
 2. **Reboot all bees.** Restarts every bee that is on.
 3. **Shutdown all bees.** Switches off every bee that is on. Wait a few seconds afterwards before you switch off their batteries.
 

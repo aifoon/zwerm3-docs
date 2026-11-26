@@ -24,7 +24,7 @@ Beide worden uitgelegd in [Streamen](./05-streaming.md).
 
 ![Het aan/uit-venster](/img/manual/power.png)
 
-1. **Close KweenB.** Sluit het programma af. KweenB stopt eerst het geluid op de bees.
+1. **Close KweenB.** Sluit het programma af. De bees blijven zoals ze zijn, zodat iemand anders op het netwerk ermee kan verder werken. Om het geluid op de bees te stoppen, druk je op **Disconnect** voor je afsluit.
 2. **Reboot all bees.** Herstart elke bee die aanstaat.
 3. **Shutdown all bees.** Zet elke bee uit die aanstaat. Wacht daarna enkele seconden voor je hun batterijen uitzet.
 

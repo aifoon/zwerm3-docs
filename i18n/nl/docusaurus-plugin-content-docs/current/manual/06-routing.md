@@ -8,7 +8,7 @@ De pagina **Routing** bepaalt welk kanaal van je audiosoftware naar welke bee ga
 2. **All bees: mono of stereo.** Stelt alle bees in één keer in. Een mono bee speelt zijn ene kanaal aan beide kanten. Een stereo bee heeft een linker- en een rechterkanaal.
 3. **Cords.** Snelle manieren om alle kabels in één keer in te pluggen (zie hieronder).
 4. **Een kanaal** van het geluidsapparaat. Het balkje ervoor beweegt wanneer je audiosoftware op dat kanaal speelt.
-5. **Een kabel.** Klik op het bolletje op een kabel om hem uit te pluggen.
+5. **Een kabel.** Klik op een kabel om hem te selecteren (hij licht op) en druk op Delete om hem uit te pluggen. Een klik op het bolletje in het midden plugt hem meteen uit.
 6. **De ingang van een bee.** Een mono bee heeft één ingang, **sound**. Een stereo bee heeft er twee: **left** en **right**.
 7. **mono / stereo** alleen voor deze bee. Klik om te wisselen.
 
@@ -33,7 +33,7 @@ Kies je een ander apparaat bij **Audio device** op de pagina Settings, dan luist
 ## Kabels pluggen
 
 - **Inpluggen:** sleep van het bolletje van een kanaal naar de ingang van een bee.
-- **Uitpluggen:** klik op het bolletje in het midden van een kabel.
+- **Uitpluggen:** klik op een kabel zodat hij oplicht en druk op Delete (of Backspace). Of klik op het bolletje in het midden van de kabel.
 
 De drie knoppen bij **Cords** doen het voor alle bees in één keer:
 
